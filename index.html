@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCode</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/home-navigation.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/introduction.css">
+    <link rel="stylesheet" href="js/login.js">
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Andika" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sriracha" rel="stylesheet">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="js/login.js"></script>
+</head>
+
+<body style="background-color: #FBEAFF;">
+    <!--       Navigation bar-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="navigation-p">
+
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+                <span class="navbar-toggler-icon ml-auto"></span>
+            </button>
+
+        <div class="collapse navbar-collapse" id="collapse_target">
+
+            <ul class="navbar-nav justify-content-end justify-content-center w-100" style="font-size: 20px;">
+                <li class="nav-item px-2">
+                    <a class="nav-link text-center" href="index.html">
+                            Home
+                        </a>
+                </li>
+                <li class="nav-item px-2">
+                    <a class="nav-link text-center" href="index.html">
+                            Introduction
+                        </a>
+                </li>
+                <li class="nav-item px-2">
+                    <a class="nav-link text-center" href="index.html">
+                            News
+                        </a>
+                </li>
+                <li class="nav-item px-2">
+                    <a class="nav-link text-center" href="index.html">
+                            Discussion
+                        </a>
+                </li>
+                <li class="nav-item px-2">
+                    <a class="nav-link text-center" href="index.html">
+                            Profile
+                        </a>
+                </li>
+                <li class="nav-item px-2">
+                    <div class="input-group py-1 w-100 text-center">
+                        <input class="form-control form-control-dark" type="text" placeholder="Search here..." aria-label="Search">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-success" type="submit"><i class="fa fa-search"></i></button>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item px-2">
+                    <a class="nav-link text-center" style="cursor: pointer;" onclick="showLogin()">
+                            Log in <i class="fas fa-sign-in-alt"></i>
+                            
+                        </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--        End of navigation bar-->
+
+    <!--        Carousel slide data--->
+    <div class="row col-lg-12 d-flex justify-content-center">
+        <div class="row col-lg-6 " id="loginPanel" style="background: white; position: fixed; height: auto; z-index: 10; display: none">
+            <h1 class="display-4" align="center">Login</h1>
+            <hr>
+            <div id="login">
+                <table width="100%">
+                    <tr>
+                        <td>
+                            <font style="color: #6B717E; font-size: 20px">Username or E-mail</font>
+                        </td>
+                        <td>
+                            <input type="text" size="30" style="height: 35px">
+                        </td>
+                    </tr>
+                </table>
+                <table width="163%">
+                    <tr>
+                        <td>
+                            <font style="color: #6B717E; font-size: 20px">Password</font>
+                        </td>
+                        <td>
+                            <input type="password" size="30" style="height: 35px">
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <font style="color: #6B717E; font-size: 20px">Connect with us:</font>
+                        </td>
+                    </tr>
+                    <td>
+                        <a href="https://www.facebook.com/fcodefpt/?fref=nf"><img src="img/img_facebook.png" alt="" width="60px" height="60px"></a>
+                    </td>
+                </table>
+            </div>
+
+            <table width="100%">
+                <tr>
+                    <td>
+                        <input type="checkbox" name="" value="">
+                        <font style="color: #6B717E; font-size: 20px">Remember Me</font>
+                    </td>
+                    <td width="50px">
+                        <input class="btn btn-primary" type="submit" value="Login" style="width: 70px" ; height="50px">
+                    </td>
+                </tr>
+            </table>
+            <hr>
+            <br>
+            <a href="register.html">Register</a>
+        </div>
+    </div>
+    
+    <img id="header-img" src="img/header-img.jpg">
+    
+<!--    Begin introduction-->
+
+    <div class="wrap-introduction-p">
+        <h1>Câu lạc bộ FCode xin chào các bạn</h1>
+        <br>
+        <div class="wrap-introduction-content-p">
+            <img src="img/introduction-img.jpg">
+            <p class="introduction-content-p">
+                Đáng lẽ phải viết từ hôm qua, nhưng đi chơi về mệt quá ngủ tới hôm nay mới viết. Nên mở đầu câu chuyện như thế nào cho đặc biệt nhỉ? Chắc sẽ là vào một ngày đẹp trời vậy...
+            </p>
+            
+            <p class="introduction-content-p">
+                Tôi còn nhớ mới ngày nào K12 còn ngồi Train C bị la mắng chửi bới hành hạ vậy mà giờ chúng nó đã lên ngôi hành hạ lại K13 rồi. K12 của CLB tôi là những chú hổ chăm chỉ (tuổi hổ), ngoan ngoãn (bị chửi nhiều) ,giỏi giang (nhờ được dạy tốt), chúng đã mang hết nhiệt huyết, tinh thần và kiến thức của mình để truyền đạt cho đàn em. Nói thật, khó có ai đủ rảnh để bỏ ra 1 tuần 2 - 4 buổi ở lại trường đến tối dạy cho đám nhóc không quen biết, chẳng nói chuyện được mấy lần, quan trọng là còn chẳng biết học xong nó có vỗ cánh bay đi không
+            </p>
+            
+            <p class="introduction-content-p">
+                Nói chung khen mấy bé K12 của CLB, khen lại luôn các bạn K11 đã tư vấn cho slide cho các bé, tạo điều kiện cho các bé thức đêm thức hôm để chỉnh sửa.
+            </p>
+            
+            <p class="introduction-content-p">
+                Giờ bắt đầu đến các bạn K13 đây. Bắt đầu dạy, cảm thấy cực kì khó chịu vì thái độ, tác phong của các bạn trẻ, có lẽ vì K12 ngoan quá nên giờ nhìn K13 ngứa mắt kinh dị. Thì cũng có “đôi lần” nhắc nhở nhẹ nhàng, thì cũng có đôi người “rời khỏi” vì sự nhẹ nhàng đó. Nhưng thôi đi rồi thì bỏ chứ biết làm sao. Những bạn nhỏ còn lại cố gắng chịu đựng 7 7 49 ngày để bước vào con đường ma đạo à không tu đạo. Cũng được xem là có cố gắng. Thế là ngày lịch kiếp cũng tới...(Ngày trình bày Project sau khóa Train C)
+            </p>
+        </div>
+    </div>
+<!--   end of introduction-->
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light bottom">
+        <div class="container footer-p">
+            <!--                <div class="row">-->
+            <div class="d-flex justify-content-start">
+                &copy; Copyright:
+            </div>
+            <div class="d-flex justify-content-end">
+                <a href="https://www.facebook.com/fcodefpt/" target="_blank">
+                        <i class="fab fa-facebook-square fb-icon-p"></i>
+                    </a>
+            </div>
+            <!--                </div>-->
+        </div>
+    </nav>
+</body>
+
+</html>

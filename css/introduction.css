@@ -1,0 +1,22 @@
+.wrap-introduction-p {
+    margin: -5% 15% 1% 15%;
+    padding: 1% 5%;
+    position: relative;
+    z-index: 2;
+    background-color: #FACCFF;
+}
+
+.wrap-introduction-p > h1 {
+    text-align: center;
+}
+
+.wrap-introduction-content-p > img {
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+#header-img {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
