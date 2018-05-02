@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/home-navigation.css">
         <link rel="stylesheet" href="css/footer.css">
-        <link rel="stylesheet" href="css/profile.css">
+        <link rel="stylesheet" href="css/profile_privacy.css">
         <link rel="stylesheet" href="js/login.js">
 
         <!-- Latest compiled and minified CSS -->
@@ -98,11 +98,11 @@
                         <img src="img/introduction-img.jpg" class="avartar-profile-P">
                     </div>
                     <ul class="wrap-cate-profile-P">
-                        <li class="cate-profile-P" style="background-color: #1D84B5;">
-                            <a href="index.html" style="color: white;">Profile</a>
-                        </li>
                         <li class="cate-profile-P">
-                            <a href="index_privacy.html">Privacy</a>
+                            <a href="index.html">Profile</a>
+                        </li>
+                        <li class="cate-profile-P" style="background-color: #1D84B5;">
+                            <a href="index_privacy.html" style="color: white;">Privacy</a>
                         </li>
                         <li class="cate-profile-P">
                             <a href="#">Topics Started</a>
@@ -112,76 +112,30 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-9">
-                    <div class="row mx-auto">
-                        <div class="col-md-4 profile-box-P">
-                            <i class="fas fa-user profile-box-icon-P"></i>
-                            <h5>Forum Role</h5>
-                            <p id="forum-role-P">User</p>
-                        </div>
-                        <div class="col-md-4 profile-box-P">
-                            <i class="fas fa-comment profile-box-icon-P"></i>
-                            <h5>Topics Started</h5>
-                            <p id="topic-started-P">22</p>
-                        </div>
-                        <div class="col-md-4 profile-box-P">
-                            <i class="fas fa-comments profile-box-icon-P"></i>
-                            <h5>Replies Created</h5>
-                            <p id="reply-created-P">38</p>
-                        </div>
+                <div class="col-md-9 change-password-P mt-4">
+                    <center>
+                        <h3>Change password</h3>
+                    </center>
+                    <div>
+                        <p class="col-md-6">Old password:</p>
+                        <input class="col-md-6" type="password">   
                     </div>
-                    <div class="row mx-auto">
-                        <div class="col-md-8 profile-profile-content-P">
-                            <h4>Name</h4>
-                            <p id="profile-name-P" class="profile-profile-detail-P">John Doe</p>
-                        </div>
-                        <div class="col-md-4 profile-profile-content-P">
-                            <h4>Gender</h4>
-                            <p id="profile-gender-P" class="profile-profile-detail-P">Male</p>
-                        </div>
+                    <div>
+                        <p class="col-md-6">New password:</p>
+                        <input class="col-md-6" type="password">   
                     </div>
-                    <div class="row mx-auto">
-                        <div class="col-md-12 profile-profile-content-P">
-                            <h4>Birthday</h4>
-                            <p id="profile-birthday-P" class="profile-profile-detail-P">02/05/1999</p>
-                        </div>
+                    <div>
+                        <p class="col-md-6">Re-enter new password:</p>
+                        <input class="col-md-6" type="password">   
                     </div>
-                    <div class="row mx-auto">
-                        <div class="col-md-12 profile-profile-content-P">
-                            <h4>Student ID</h4>
-                            <p id="profile-studenID-P" class="profile-profile-detail-P">SE130139</p>
-                        </div>
-                    </div>
-                    <div class="row mx-auto">
-                        <div class="col-md-12 profile-profile-content-P">
-                            <h4>Course</h4>
-                            <p id="profile-course-P" class="profile-profile-detail-P">13</p>
-                        </div>
-                    </div>
-                    <div class="row mx-auto">
-                        <div class="col-md-12 profile-profile-content-P">
-                            <h4>Major</h4>
-                            <p id="profile-major-P" class="profile-profile-detail-P">Software Engineering</p>
-                        </div>
-                    </div>
-                    <div class="row mx-auto">
-                        <div class="col-md-12 profile-profile-content-P">
-                            <h4>Phone number</h4>
-                            <p id="profile-major-P" class="profile-profile-detail-P">090 417 58 58</p>
-                        </div>
-                    </div>
-                    <div class="row mx-auto">
-                        <div class="col-md-12 profile-profile-content-P">
-                            <h4>Email</h4>
-                            <p id="profile-major-P" class="profile-profile-detail-P">phucttse130139@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="row mx-auto">
-                        <div class="col-md-12 profile-profile-content-P">
-                            <h4>Facebook</h4>
-                            <p id="profile-major-P" class="profile-profile-detail-P">http://facebook.com/fcode</p>
-                        </div>
-                    </div>
+                    <center>
+                        <button type="submit" id="save-change-password-P" class="mx-auto">
+                            Save change
+                        </button>
+                        <button type="button" id="delete-account-P" class="mx-auto">
+                            Delete Account
+                        </button>
+                    </center>
                 </div>
             </div>
         </div>
