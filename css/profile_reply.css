@@ -1,0 +1,109 @@
+.wrap-profile-topic {
+    margin-top: -7%;
+    background-color: white;
+    position: relative;
+    z-index: 5;
+    margin-bottom: 2%;
+    padding-bottom: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#header-img {
+    width: 100%;
+}
+
+.wrap-avartar-profile-P {
+    padding: 8%;
+    border: 1px solid #DDDDDD;
+    margin-top: 15%;
+    background-color: white;
+}
+
+.avartar-profile-P {
+    width: 100%;
+}
+
+.wrap-cate-profile-P {
+    padding: 0;
+}
+.cate-profile-P {
+    list-style-type: none;
+    padding: 5% 0 5% 10%;
+    font-size: 20px;
+    border: 1px solid #DDDDDD;
+}
+
+.cate-profile-P > a {
+    color: black;
+    transition: 0.5s;
+}
+
+.cate-profile-P > a:hover {
+    text-decoration: none;
+    color: #1D84B5;
+}
+
+.profile-topic-page-P {
+    display: inline-block;
+}
+
+.profile-topic-page-P > a {
+    color: black;
+    border: 1px solid #DDDDDD;
+    padding: 7px 10px;
+    transition: 0.5s;
+}
+
+.profile-topic-page-P > .profile-topic-active-page-P:hover {
+    text-decoration: none;
+}
+
+.profile-topic-page-P > .profile-topic-unactive-page-P:hover {
+    color: black;
+    text-decoration: none;
+    border-color: black;
+}
+
+.wrap-reply-table-P {
+    font-size: 20px;
+    border-collapse: collapse;
+    margin-bottom: 2%;
+}
+
+.profile-reply-to-topic-info-P {
+    display: inline;
+    font-size: 15px;
+    color: #83717E;
+    float: right;
+}
+.profile-reply-time-info-P {
+    display: inline;
+    font-size: 15px;
+    color: #83717E;
+    float: left;
+}
+
+.profile-reply-wrap-general-P {
+    border-bottom: 1px solid  #83717E;
+    padding-bottom: 5px;
+    background-color: #F1F1F1;
+}
+
+.profile-reply-to-topic-info-P>a {
+    color: #6B717E;
+    transition: 0.5s;
+    font-weight: 500;
+}
+
+.profile-reply-to-topic-info-P>a:hover {
+    text-decoration: none;
+}
+
+.profile-reply-content-P {
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+.profile-reply-wrap-heading-P, .profile-reply-wrap-content-P {
+    border: 1px solid black;
+}

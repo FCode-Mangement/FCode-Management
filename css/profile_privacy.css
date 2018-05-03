@@ -1,4 +1,4 @@
-.wrap-profile-profile {
+.wrap-profile-privacy {
     margin-top: -7%;
     background-color: white;
     position: relative;
@@ -56,6 +56,7 @@
     padding: 10px;
     border: 1px solid black;
     width: 50% !important;
+    border-radius: 10px;
 }
 
 .change-password-P h3 {
@@ -69,6 +70,8 @@
     margin-top: 1%;
     font-weight: bold;
     display: block;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 #delete-account-P {
@@ -79,4 +82,6 @@
     margin-top: 5%;
     font-weight: bold;
     display: block;
+    border-radius: 10px;
+    cursor: pointer;
 }
