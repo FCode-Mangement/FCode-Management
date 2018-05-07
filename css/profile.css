@@ -65,5 +65,57 @@
 }
 
 .profile-profile-detail-P {
+    display: inline
+}
+
+.profile-edit-icon-P {
+    display: inline;
+    float: right;
     cursor: pointer;
+}
+
+@media (max-width: 990px) {
+    .profile-box-P > h5 {
+        font-size: 15px;
+    }
+    
+    .profile-box-P > p {
+        font-size: 10px;
+    }
+    
+    .cate-profile-P {
+        font-size: 15px;
+    }
+    
+    .profile-profile-content-P > h4 {
+        font-size: 15px;
+        margin-bottom: 0px;
+    }
+    
+    .profile-profile-content-P > p {
+        font-size: 10px;
+    }
+    
+    .profile-box-icon-P {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrap-cate-profile-P {
+        display: flex;
+    }
+    
+    .cate-profile-P {
+        text-align: center;
+        font-size: 15x;
+        padding-left: 0px;
+        flex: 1;
+        width: 25%;
+        position: relative;
+        top: 50%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
 }
