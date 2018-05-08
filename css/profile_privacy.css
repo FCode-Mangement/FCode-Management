@@ -59,6 +59,44 @@
     cursor: pointer;
 }
 
+#privacy-focus-P {
+    background-color: #009EFA;
+}
+
+.wrap-change-password-P {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.label-change-password-P {
+    margin-bottom: 0;
+    margin-right: 20px;
+    font-size: 15px;
+    padding-top: 5px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.input-change-password-P {
+    width: 100%;
+    border: 1px solid blue;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.input-change-password-P:placeholder-shown {
+    font-size: 15px;
+    padding-left: 10px !important;
+}
+
+.change-pass-submit-bnt-P {
+    padding: 10px 30px;
+    background-color: #00C9B7;
+    border: 0;
+    border-radius: 25px;
+    font-size: 15px;
+}
+
 @media (max-width: 990px) {
     .cate-profile-P {
         font-size: 15px;
