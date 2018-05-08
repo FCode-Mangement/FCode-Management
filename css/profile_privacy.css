@@ -73,7 +73,7 @@
     margin-right: 20px;
     font-size: 15px;
     padding-top: 5px;
-    padding-left: 0;
+    padding-left: 0px;
     padding-right: 0;
 }
 
@@ -82,6 +82,7 @@
     border: 1px solid blue;
     border-radius: 5px;
     height: 30px;
+    padding-left: 10px;
 }
 
 .input-change-password-P:placeholder-shown {
@@ -95,6 +96,19 @@
     border: 0;
     border-radius: 25px;
     font-size: 15px;
+}
+
+.del-acc-submit-bnt-P {
+    padding: 10px 30px;
+    background-color: #FF0000;
+    border: 0;
+    border-radius: 25px;
+    font-size: 15px;
+    color: white;
+}
+
+.wrap-delete-account-P {
+    display: none;
 }
 
 @media (max-width: 990px) {
