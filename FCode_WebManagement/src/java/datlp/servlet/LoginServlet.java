@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package datlp.account;
+package datlp.servlet;
 
+import datlp.account.AccountDAO;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.SQLException;
@@ -14,13 +15,13 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
  * @author DAT
  */
-public class SignUpServlet extends HttpServlet {
-
+public class LoginServlet extends HttpServlet {
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -37,17 +38,19 @@ public class SignUpServlet extends HttpServlet {
         String url = "invalid.html";
         try {
             String username = request.getParameter("txtUsername");
-            String fullname = request.getParameter("txtFullname");
             String password = request.getParameter("txtPassword");
+            
             AccountDAO dao = new AccountDAO();
             try {
-                if(dao.signUp(username, fullname, password)) {
+                String role = dao.checkLogin(username, password);
+                if(role.equals("Admin")) {
                     url = "success.html";
+                    request.setAttribute("username", username);
                 }
-            } catch (SQLException ex) {
-                Logger.getLogger(SignUpServlet.class.getName()).log(Level.SEVERE, null, ex);
             } catch (ClassNotFoundException ex) {
-                Logger.getLogger(SignUpServlet.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(LoginServlet.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (SQLException ex) {
+                Logger.getLogger(LoginServlet.class.getName()).log(Level.SEVERE, null, ex);
             }
             response.sendRedirect(url);
         } finally {

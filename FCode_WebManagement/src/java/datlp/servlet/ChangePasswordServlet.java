@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package datlp.account;
+package datlp.servlet;
 
+import datlp.account.AccountDAO;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.SQLException;
@@ -19,7 +20,8 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author DAT
  */
-public class LoginServlet extends HttpServlet {
+public class ChangePasswordServlet extends HttpServlet {
+
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -35,19 +37,17 @@ public class LoginServlet extends HttpServlet {
         PrintWriter out = response.getWriter();
         String url = "invalid.html";
         try {
-            String username = request.getParameter("txtUsername");
-            String password = request.getParameter("txtPassword");
-            
+           String username = (String)request.getAttribute("username");
+           String newPassword = request.getParameter("txtNewPassword");
             AccountDAO dao = new AccountDAO();
             try {
-                String role = dao.checkLogin(username, password);
-                if(role.equals("Admin")) {
+                if(dao.changePassword(username, newPassword)) {
                     url = "success.html";
                 }
-            } catch (ClassNotFoundException ex) {
-                Logger.getLogger(LoginServlet.class.getName()).log(Level.SEVERE, null, ex);
             } catch (SQLException ex) {
-                Logger.getLogger(LoginServlet.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(ChangePasswordServlet.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (ClassNotFoundException ex) {
+                Logger.getLogger(ChangePasswordServlet.class.getName()).log(Level.SEVERE, null, ex);
             }
             response.sendRedirect(url);
         } finally {

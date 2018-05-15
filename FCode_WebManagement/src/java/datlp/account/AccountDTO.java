@@ -32,6 +32,20 @@ public class AccountDTO implements Serializable {
         this.email = email;
     }
 
+    public AccountDTO(String fullname, String studentID, String email, String course, String gender, String birthdate, String phoneNumber, String linkFacebook, String major) {
+        this.fullname = fullname;
+        this.studentID = studentID;
+        this.email = email;
+        this.course = course;
+        this.gender = gender;
+        this.birthdate = birthdate;
+        this.phoneNumber = phoneNumber;
+        this.linkFacebook = linkFacebook;
+        this.major = major;
+    }
+    
+    
+
     public String getUsername() {
         return username;
     }
