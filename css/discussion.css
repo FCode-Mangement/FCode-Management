@@ -1,0 +1,256 @@
+/* GLOBAL CSS*/
+
+*,body {
+    box-sizing: border-box;
+}
+
+ol,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+/*
+input:focus {
+    outline: 0;
+    box-shadow: 0 0 10px 10px red;
+    border-color: #333;
+    border: #333 1px solid;
+}
+*/
+.container {
+    padding: 0;
+    margin: 0;
+}
+#title-wrapper {
+    background: linear-gradient(-40deg,#364253 0%,#009999 100%);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 65vh;
+    text-align: center;
+    z-index: -2
+}
+
+.clear-float {
+    display: block;
+    clear: both;
+}
+
+.title {
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 3em;
+    color: #333;
+
+}
+
+#body-wrapper {
+    margin-top: -50px;
+    background-color: #f1f4f9;
+}
+
+#body-wrapper #body-content {
+    box-shadow: 0 30px 50px 0 rgba(1,1,1,.15);
+}
+
+#body-wrapper #body-content #row1 {
+    padding: 0;
+}
+#body-wrapper #body-content #row1 .row-item {
+    box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);
+    margin-bottom: 50px;
+}
+
+#body-wrapper #body-content #row1 p{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#body-content {
+/*    box-shadow: 0 0 -120px 1px #222;*/
+    /*box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);*/
+    background: #fefefe;
+}
+
+/*search bar*/
+.form-control,#button-search {
+    border-radius: 0;
+}
+
+
+
+.like-dislike i{
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.like-dislike .like:hover {
+    color: #0a88ff;
+}
+
+.like-dislike .dislike:hover {
+    color: #e93f2e;
+}
+
+.content-footer {
+    border-top: solid 1px #333;
+    padding: 30px 60px;
+}
+.content-footer div {
+    display: inline-block;
+    padding-right: 20px;
+    border-top: 0 1px 3px rgba(0,0,0,.12);
+}
+/*recent new section */
+.recent-news-wrapper {
+    border: 1px solid #ddd;
+}
+.recent-news-wrapper .recent-title {
+    padding-top: 20px;
+    font-size: 2em;
+}
+
+.recent-news-wrapper > .row {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.recent-news-wrapper .list-item {
+    border-bottom: 1px #ddd solid;
+    height: 100%;
+}
+  .recent-news-wrapper .list-item-left {
+        /*float: left;*/
+        width: 100px;
+        height: auto;
+    }
+
+.recent-news-wrapper .list-item-right {
+    text-align: center;
+    margin: auto 20px auto 20px;
+}
+
+/*comment*/
+#row1-item2 {
+    background-color: #f1f4f9;
+}
+.comment-wrapper .comment {
+     background-color: #fefefe;
+}
+
+.comment-wrapper .li-comment{
+/*    padding: 2px 2px;*/
+    border: 4px solid #fefefe;
+    color: #A5AFC0;
+    background-color: #fefefe;
+}
+.comment-footer {
+    position: relative;
+}
+.comment-avatar {
+    position: absolute;
+    border: 4px solid #fefefe;
+    left: -25px;
+    top: 10px;
+}
+.comment-info {
+    margin-left: 40px;
+}
+.comment-wrappper .date {
+    float: right;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    line-height: 20px;
+}
+
+.comment-content {
+    position: relative;
+    margin-left: 40px;
+    padding-top: 10px;
+    color: #333;
+}
+
+.comment-content .comment-number {
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+    font-size: 2em;
+     color: #944743;
+    
+}
+ol.layer2 {
+    margin-top: 20px;
+}
+.comment-reply {
+    text-align: right;
+    padding-right: 10px;
+    color: darkcyan;
+    text-transform: uppercase;
+}
+/*---Media Queries --*/
+@media (max-width: 992px) {
+ 
+  }
+
+@media (max-width: 768px) {
+  #body-content {
+    margin-top: 20px;
+    background: #fefefe;
+}
+   .comment-wrapper .date {
+    display: block;
+    float: none;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    line-height: 20px;
+    margin-left: 40px;
+}
+    
+}
+/*xs*/
+@media (max-width: 576px) {
+   .title {
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 2.5em;
+    color: #333;
+}
+ .comment-content {
+    margin-left: 25px;
+    padding-top: 10px;
+    color: #333;
+     font-size: 0.7em;
+}
+}
+
+/*--- Bootstrap Padding Fix --*/
+/*[class*="col-"] {
+    padding: 1rem; 
+}
+*/
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
