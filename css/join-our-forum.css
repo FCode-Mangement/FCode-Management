@@ -96,4 +96,4 @@
     width: 100%;
     height: auto;
 }
-
+.hidden_alert {color: red;font-size: 60;visibility: hidden;}
