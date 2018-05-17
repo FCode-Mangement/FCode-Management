@@ -97,7 +97,7 @@ public class AccountDAO implements Serializable {
         try {
             conn = datlp.connection.MyConnection.getConnection();
             String sql = "Select Fullname, BirthDate, StudentID, Course, Major, Gender, PhoneNumber, LinkFacebook, Email "
-                    + "Where Username = ?";
+                    + "From tblAccount Where Username = ?";
             ps = conn.prepareStatement(sql);
             ps.setString(1, username);
             rs = ps.executeQuery();

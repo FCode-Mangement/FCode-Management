@@ -30,11 +30,6 @@
                         </a>
         </li>
         <li class="nav-item px-2">
-          <a class="nav-link text-center" href="profile.jsp">
-                            Profile
-                        </a>
-        </li>
-        <li class="nav-item px-2">
           <div class="input-group py-1 w-100 text-center">
             <input class="form-control form-control-dark" type="text" placeholder="Search here..." aria-label="Search">
             <div class="input-group-append">
@@ -45,7 +40,7 @@
         <li class="nav-item px-2">
                         <% String username = (String) session.getAttribute("username");
                             if (username != null) { %>
-                            <a class="nav-link text-center" style="cursor: pointer;">
+                            <a class="nav-link text-center" style="cursor: pointer;" href="profile.jsp">
                             Welcome <% out.println(session.getAttribute("username")); %> </a> <%
                             }
                             else { %>

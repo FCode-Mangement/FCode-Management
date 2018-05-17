@@ -16,6 +16,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
@@ -41,6 +42,8 @@ public class ViewProfileServlet extends HttpServlet {
             AccountDAO dao = new AccountDAO();
             try {
                 AccountDTO dto = dao.viewProfile(username);
+//                HttpSession session = request.getSession();
+//                session.setAttribute("account", dto);
             } catch (SQLException ex) {
                 Logger.getLogger(ViewProfileServlet.class.getName()).log(Level.SEVERE, null, ex);
             } catch (ClassNotFoundException ex) {

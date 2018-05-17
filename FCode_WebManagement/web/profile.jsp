@@ -1,3 +1,5 @@
+<%@page import="datlp.account.AccountDAO"%>
+<%@page import="datlp.account.AccountDTO"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
@@ -82,48 +84,67 @@
                         <div class="row mx-auto">
                             <div class="col-md-6 profile-profile-content-P">
                                 <h4>Name</h4>
-                                <p id="profile-name-P" class="profile-profile-detail-P">John Doe</p>
+                                <p id="profile-name-P" class="profile-profile-detail-P">
+                                    <% AccountDAO dao = new AccountDAO();
+                                        AccountDTO dto = dao.viewProfile(username);
+                                        out.println(dto.getFullname());
+                                    %>
+                                </p>
                                 <i class="fas fa-edit profile-edit-icon-P"></i>
                             </div>
                             <div class="col-md-6 profile-profile-content-P">
                                 <h4>Gender</h4>
-                                <p id="profile-gender-P" class="profile-profile-detail-P">Male</p>
+                                <p id="profile-gender-P" class="profile-profile-detail-P">
+                                    <% out.println(dto.getGender()); %>
+                                </p>
                                 <i class="fas fa-edit profile-edit-icon-P"></i>
                             </div>
                         </div>
                         <div class="row mx-auto">
                             <div class="col-md-6 profile-profile-content-P">
                                 <h4>Birthday</h4>
-                                <p id="profile-birthday-P" class="profile-profile-detail-P">02/05/1999</p>
+                                <p id="profile-birthday-P" class="profile-profile-detail-P">
+                                    <% out.println(dto.getBirthdate()); %>
+                                </p>
                                 <i class="fas fa-edit profile-edit-icon-P"></i>
                             </div>
                             <div class="col-md-6 profile-profile-content-P">
                                 <h4>Phone number</h4>
-                                <p id="profile-major-P" class="profile-profile-detail-P">090 417 58 58</p>
+                                <p id="profile-major-P" class="profile-profile-detail-P">
+                                    <% out.println(dto.getPhoneNumber()); %>
+                                </p>
                                 <i class="fas fa-edit profile-edit-icon-P"></i>
                             </div>
                         </div>
                         <div class="row mx-auto">
                             <div class="col-md-6 profile-profile-content-P">
                                 <h4>Student ID</h4>
-                                <p id="profile-studenID-P" class="profile-profile-detail-P">SE130139</p>
+                                <p id="profile-studenID-P" class="profile-profile-detail-P">
+                                    <% out.println(dto.getStudentID()); %>
+                                </p>
                                 <i class="fas fa-edit profile-edit-icon-P"></i>
                             </div>
                             <div class="col-md-6 profile-profile-content-P">
                                 <h4>Email</h4>
-                                <p id="profile-major-P" class="profile-profile-detail-P">phucttse130139@gmail.com</p>
+                                <p id="profile-major-P" class="profile-profile-detail-P">
+                                    <% out.println(dto.getEmail()); %>
+                                </p>
                                 <i class="fas fa-edit profile-edit-icon-P"></i>
                             </div>
                         </div>
                         <div class="row mx-auto">
                             <div class="col-md-6 profile-profile-content-P">
                                 <h4>Course</h4>
-                                <p id="profile-course-P" class="profile-profile-detail-P">13</p>
+                                <p id="profile-course-P" class="profile-profile-detail-P">
+                                    <% out.println(dto.getCourse()); %>
+                                </p>
                                 <i class="fas fa-edit profile-edit-icon-P"></i>
                             </div>
                             <div class="col-md-6 profile-profile-content-P">
                                 <h4>Facebook</h4>
-                                <p id="profile-major-P" class="profile-profile-detail-P">https://facebook.com/fcode</p>
+                                <p id="profile-major-P" class="profile-profile-detail-P">
+                                    <% out.println(dto.getLinkFacebook()); %>
+                                </p>
                                 <i class="fas fa-edit profile-edit-icon-P"></i>
                             </div>
                         </div>
