@@ -5,8 +5,10 @@
         <group>
             <file>file:/C:/Users/DAT/Desktop/FCode-Management/FCode_WebManagement/src/java/datlp/servlet/LoginServlet.java</file>
             <file>file:/C:/Users/DAT/Desktop/FCode-Management/FCode_WebManagement/src/java/datlp/account/AccountDAO.java</file>
+            <file>file:/C:/Users/DAT/Desktop/FCode-Management/FCode_WebManagement/src/java/datlp/post/PostDTO.java</file>
             <file>file:/C:/Users/DAT/Desktop/FCode-Management/FCode_WebManagement/web/profile.jsp</file>
             <file>file:/C:/Users/DAT/Desktop/FCode-Management/FCode_WebManagement/web/outline/header.jsp</file>
+            <file>file:/C:/Users/DAT/Desktop/FCode-Management/FCode_WebManagement/src/java/datlp/comment/CommentDTO.java</file>
             <file>file:/C:/Users/DAT/Desktop/FCode-Management/FCode_WebManagement/src/java/datlp/servlet/ViewProfileServlet.java</file>
         </group>
     </open-files>
