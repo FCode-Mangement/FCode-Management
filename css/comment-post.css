@@ -1,7 +1,7 @@
 /*////////////////Add-overlay//////////////*/
 
 body {
-    background-color: #fafafa !important;
+    background-color: #f7f7f7 !important;
 }
 
 #wrap-content-forum-p {
@@ -16,7 +16,7 @@ body {
 
 .post-title-link:hover {
     text-decoration: none !important;
-    color: green !important;
+    color: lightcoral !important;
     transition-duration: 0.4s !important;
 }
 
@@ -47,7 +47,7 @@ body {
     box-sizing: border-box;
     position: relative;
     text-decoration: none;
-    background-color: #f7f7f7 !important;
+    background-color: #f5f5f5 !important;
 }
 
 .left-column {
@@ -81,6 +81,10 @@ body {
     text-decoration: none;
 }
 
+.mem-avatar {
+    width: 70%;
+}
+
 .comment-post-service {
     background-color: coral;
     font-weight: 500;
@@ -89,7 +93,7 @@ body {
 }
 
 .comment-post-service:hover {
-    background-color:darkturquoise;
+    background-color: darkturquoise;
     color: black;
     transition-duration: 0.5s;
     cursor: context-menu;
@@ -123,8 +127,9 @@ body {
 
 .box-like {
     font-family: sans-serif;
-    font-size: 1.2rem;  
+    font-size: 1.2rem;
 }
+
 .button-like {
     color: black;
     opacity: 0.7;
@@ -133,10 +138,11 @@ body {
 .button-dislike {
     color: black;
     opacity: 0.7;
-    
+
 }
 
-.button-like:hover, .button-dislike:hover{
+.button-like:hover,
+.button-dislike:hover {
     text-decoration: none;
 }
 
@@ -145,7 +151,7 @@ body {
 }
 
 .no-decoration {
-    color:black;
+    color: black;
 }
 
 .name-list-forum {
@@ -153,5 +159,17 @@ body {
     font-size: 1.1rem;
 }
 
-
 /*///Responsive///*/
+
+@media (max-width: 800px) {
+    .profile-name {
+        font-size: 0.9rem;
+    }
+    .comment-post-service {
+        font-size: 0.9rem;
+    }
+    .mem-avatar {
+        width: 50%;
+        max-width: 50%;
+    }
+}
