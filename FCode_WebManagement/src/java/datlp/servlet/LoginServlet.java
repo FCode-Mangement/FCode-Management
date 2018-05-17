@@ -44,8 +44,9 @@ public class LoginServlet extends HttpServlet {
             try {
                 String role = dao.checkLogin(username, password);
                 if(role.equals("Admin")) {
-                    url = "success.html";
-                    request.setAttribute("username", username);
+                    url = "index.jsp";
+                    HttpSession session = request.getSession();
+                    session.setAttribute("username", username);
                 }
             } catch (ClassNotFoundException ex) {
                 Logger.getLogger(LoginServlet.class.getName()).log(Level.SEVERE, null, ex);
