@@ -1,3 +1,10 @@
+.container-fluid {
+    text-align: center;
+}
+
+#navigation-p {
+    font-family: 'Lobster', cursive;
+}
 #logo-header-p {
     font-family: 'Lobster', cursive;
     font-size: 6em;
