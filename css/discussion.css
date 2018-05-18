@@ -123,7 +123,6 @@ input:focus {
 }
 .recent-news-wrapper .list-item {
     border-bottom: 1px #ddd solid;
-    height: 100%;
 }
   .recent-news-wrapper .list-item-left {
         /*float: left;*/
