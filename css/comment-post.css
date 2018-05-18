@@ -159,9 +159,21 @@ body {
     font-size: 1.1rem;
 }
 
+.topic-list-forum {
+    font-size: 0.9rem;
+}
+
+.avatar-list-forum {
+    max-width: 25%;
+}
+
+.topic-tag-choice {
+    opacity: 0.8;
+}
+
 /*///Responsive///*/
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
     .profile-name {
         font-size: 0.9rem;
     }
@@ -173,3 +185,87 @@ body {
         max-width: 50%;
     }
 }
+
+@media (max-width: 768px) {
+    .search-box {
+        padding: 6px 0px;
+        padding-right: 100px;
+        padding-left: 0px;
+        max-width: 80%;
+    }
+    .search-box::placeholder{
+        font-size: 0.75rem;
+    }
+    .search-button {
+        max-width: 20%;
+    }
+    .name-list-forum {
+        font-size: 0.9rem;
+    }
+    .topic-list-forum {
+        font-size: 0.7rem;
+    }
+    .avatar-list-forum {
+        width: 100%;
+    }
+    .fa-search {
+        font-size: 0.7rem;
+    }
+    .topic-tag-choice {
+    font-size: 0.7rem;
+}
+}
+
+@media (max-width: 400px) {
+    .search-box {
+        padding: 15px;
+        padding-right: 100px;
+        padding-left: 20px;
+        max-width: 70%;
+        font-size: 0.9rem;
+    }
+    .search-button {
+        color: white;
+        max-width: 30%;
+        font-size: 0.9rem;
+    }
+    .name-list-forum {
+        font-size: 1.1rem;
+    }
+    .topic-list-forum {
+        font-size: 0.8rem;
+    }
+    .avatar-list-forum {
+        max-width: 40%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .search-box {
+        padding: 11px;
+        padding-right: 100px;
+        padding-left: 20px;
+        max-width: 75%;
+        font-size: 0.9rem;
+    }
+    .search-button {
+        max-width: 25%;
+        font-size: 0.9rem;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .search-box {
+        padding: 15px;
+        padding-right: 100px;
+        padding-left: 20px;
+        max-width: 80%;
+        font-size: 0.9rem;
+    }
+    .search-button {
+        max-width: 20%;
+        font-size: 0.9rem;
+    }
+}
+
