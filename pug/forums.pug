@@ -4,19 +4,21 @@ mixin card(val)
   - var src = "images/post-news-img"+val+".jpg"
   .col-xl-3.col-md-4.col-xs-12.col-sm-6.card-news-post
     .card-inner
-      .img-header
-        img.img-fluid(src=src alt="Forum Image")
-      .article-section.text-left.p-3
-        a.date March 8,2018
-        h4.forum-catogy.text-truncate(style="max-width: 100%") What will a Marks wil be like
+      footer
+        .img-header
+          img.img-fluid(src=src alt="Forum Image")
+      .body-card-wrapper.my-4
+        .article-section.text-left.px-3
+          a.date March 8,2018
+          h4.forum-catogy.text-truncate(style="max-width: 100%") What will a Marks wil be like
       .news-info.d-flex.justify-content-between.p-3
-        div
-          a.author-infor.my-auto
-            img.border.rounded-circle(src="images/user-avtar-resize.png" alt="User Ava" style="width: 20px")
-          span.author-name.my-auto FCode
-        div.text-right
-          span.cmt-number.text-right
-            i.fa.fa-comments 0
+          div
+            a.author-infor.my-auto
+              img.border.rounded-circle(src="images/user-avtar-resize.png" alt="User Ava" style="width: 20px")
+            span.author-name.my-auto FCode
+          div.text-right
+            span.cmt-number.text-right
+              i.fa.fa-comments 0
 
 doctype html
 html(lang="en")
