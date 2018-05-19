@@ -189,31 +189,63 @@
                     <div class="row mx-auto register_title">
                         <h2>Register</h2>
                     </div>
-                    <div class="row mx-auto registerform">
+                        <div class="row mx-auto registerform">
                         <form name="Thi" method="post" style="text-align:justify;">
                             <div class="form-group thisform">
-                                <div class="imageicon" style="background-image: url(img/user.png);"></div>
-                                <input type="text" class="form-control register_text input-lg" id="username" placeholder="Username">
-                                <span id="alert1" class="hidden_alert">Username trên 6 kí tự, chỉ gồm chữ cái thường, hoa và chữ số</span>
+                                
+                                <div class="input_field"><div class="imageicon" style="background-image: url(img/user.png);"></div>
+                                    <div class="register_text">
+                                        <input type="text" class="form-control input-lg" id="username" placeholder="Username">
+                                    </div>
+                                    
+                                </div> 
+                                <div class="hidden">
+                                     <span id="alert1" class="hidden_alert">Username is 6 or more characters, including only numbers, lower & uppercase letters</span>
+                                </div> 
                             </div>
                             <div class="form-group thisform">
-                                <div class="imageicon" style="background-image: url(img/user.png);"></div>
-                                <input type="text" class="form-control register_text input-lg" id="fullname" placeholder="Fullname">
-                                <span id="alert2" class="hidden_alert">Tên trên 3 kí tự, chỉ gồm chữ cái thường và hoa, được dấu cách</span>
+                                
+                                <div class="input_field"><div class="imageicon" style="background-image: url(img/user2.png);"></div>
+                                    <div class="register_text">
+                                        <input type="text" class="form-control input-lg" id="fullname" placeholder="Fullname">
+                                    </div> 
+                                </div> 
+                                <div class="hidden">
+                                    <span id="alert2" class="hidden_alert">Full name is 3 or more characters, including only spaces, lower & uppercase letters</span>
+                                </div> 
                             </div>
                             <div class="form-group thisform">
-                                <div class="imageicon" style="background-image: url(img/email.png);"></div>
-                                <input type="text" class="form-control register_text input-lg" id="email" placeholder="Email">
-                                <span id="alert3" class="hidden_alert">Email không hợp lệ</span>
+                               
+                                <div class="input_field"> <div class="imageicon" style="background-image: url(img/email.png);"></div>
+                                    <div class="register_text">
+                                        <input type="text" class="form-control input-lg" id="email" placeholder="Email">
+                                    </div> 
+                                </div> 
+                                <div class="hidden">
+                                     <span id="alert3" class="hidden_alert">Invalid Email</span>
+                                </div> 
                             </div>
                             <div class="form-group thisform">
-                                <div class="imageicon" style="background-image: url(img/key.png);"></div>
-                                <input type="password" class="form-control register_text input-lg" id="password" placeholder="Password">
-                                <span id="alert4" class="hidden_alert">Password trên 6 kí tự, chỉ gồm chữ cái thường, hoa và chữ số</span> 
+                                
+                                <div class="input_field"><div class="imageicon" style="background-image: url(img/key.png);"></div>
+                                    <div class="register_text">
+                                        <input type="password" class="form-control input-lg" id="password" placeholder="Password">
+                                    </div> 
+                                </div> 
+                                <div class="hidden">
+                                    <span id="alert4" class="hidden_alert">Password is 6 or more characters, including only numbers, lower & uppercase letters</span>  
+                                </div>
                             </div>
                             <div class="form-group thisform"> 
-                                <input type="password" class="form-control register_text input-lg" id="confirmpassword" placeholder="Confirm password">
-                                <span id="alert5" class="hidden_alert">Password nhập lại chưa trùng khớp</span>
+
+                                <div class="input_field"><div class="imageicon" style="background-image: url(img/key2.png);"></div>
+                                    <div class="register_text">
+                                        <input type="password" class="form-control register_text input-lg" id="confirmpassword" placeholder="Confirm password">
+                                    </div> 
+                                </div> 
+                                <div class="hidden">
+                                    <span id="alert5" class="hidden_alert">Password not matched</span>
+                                </div> 
                             </div> 
 
                             <div class="form-group thisform" id="agreeform">
@@ -226,12 +258,12 @@
                                 </div>
                             </div> 
                             <div class="form-group thisform" style="padding-top: 10px">
-                                <input type="submit" value="Submit" onClick="return checkregister()" id="submitbutton" />
+                                <input type="button" value="Submit" onclick="checkregister()" id="submitbutton" />
                             </div>
                         </form>
-                    </div>
-       
+                    </div> 
             </div>
+            
             <div class="col-md-5">
                 <div class="row mx-auto contact_us">
                     <h3 style="font-style:bold">Contact Us</h3>
@@ -248,6 +280,17 @@
             </div>
         </div>
     </div>
+    <div id="noti_field">
+        <div id="notification">
+            <div class="notipart1">
+                <p>Bạn đã đăng kí tài khoản thành công, vui lòng đợi admin duyệt</p>
+            </div>
+            <div class="notipart2">
+                <input type="button" name="Confirmar" value="Confirm" onclick="exitNoti()">
+            </div>
+        </div>
+    </div>
+    
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light bottom">
         <div class="container footer-p">
