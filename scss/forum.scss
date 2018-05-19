@@ -33,10 +33,14 @@ p,h4 {
 		position: relative;
 		z-index: 2;
 		margin-top: -50px;
+		@media (max-width: 576px){
+			width: 100%;
+		background-color: #fefefe;
+		position: relative;
+		z-index: 2;
+		margin-top: 0px;
+		}
 		#body-inner{
-			// position: relative;
-			padding: 20px 10px;
-			
 			#top-panel{
 				margin: 0;
 				.item-cell{
@@ -44,7 +48,7 @@ p,h4 {
  						box-sizing: content-box;
   					}
 					box-shadow: $box-shadow-main;
-					padding: 20px 30px;
+					padding: 10px 20px;
 					//su dung global css thumb-icon
 					.thumb-icon {
 						position: relative;
@@ -62,11 +66,11 @@ p,h4 {
 					.cell-content{
 						line-height: 25px;
 						.article-cell{
-							font-size: 1.5em;
+							font-size: 150%;
 							color: gray;
 						}
 						.number-of-cell{
-							font-size: 1.8em;
+							font-size: 180%;
 							color: #111;
 							font-weight: bold;
 						}
@@ -80,6 +84,14 @@ p,h4 {
 				}
 			#middle-panel{
 				footer {
+					.main-title{
+						font-size: 2em;
+						font-weight: 700;
+						@media (max-width: 576px){
+							font-size: 1.3em;
+							line-height: 1.4;
+						}
+					}
 					p{
 						position: relative;
 						padding: 5px 10px;
@@ -97,7 +109,7 @@ p,h4 {
 					padding: 20px 0 20px 0;
 					margin: 0;
 					.slick-slide {
-						padding:0 ;
+						// padding:0 ;
 						.slide-wrapper{
 							cursor: pointer;
 							box-shadow: $box-shadow-main;
@@ -145,11 +157,11 @@ p,h4 {
 				.main-title{
 					h4{
 						font-size: 2em;
+						
 					}
 				}
 				#bottom-wrapper{
-					.card-news-post{
-						.card-inner{
+					.card-inner{
 							cursor: pointer;
 							margin-bottom: 20px;
 							box-shadow: $box-shadow-main;
@@ -161,8 +173,6 @@ p,h4 {
 								box-shadow: 0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);
 							}
 						}
-						
-					}
 				}
 			}
 			}
@@ -175,8 +185,7 @@ p,h4 {
 	@media (max-width: 768px){
 		padding: 20px 30px;
 	}
-	@media (max-width: 992px){
+	@media (min-width: 768px){
 		padding: 60px 50px 60px 50px;
 	}
-
 }
