@@ -1,7 +1,7 @@
 // MIXIN CODE
 mixin card(val)
   //item-card
-  - var src = "images/post-news-img"+val+".jpg"
+  - var src = "images/post-news-img" + val + ".jpg"
   .col-xl-3.col-md-4.col-xs-12.col-sm-6.card-news-post
     .card-inner
       footer
@@ -17,8 +17,25 @@ mixin card(val)
               img.border.rounded-circle(src="images/user-avtar-resize.png" alt="User Ava" style="width: 20px")
             span.author-name.my-auto FCode
           div.text-right
-            span.cmt-number.text-right
-              i.fa.fa-comments 0
+            span.cmt-number
+              i.fa.fa-comments  0
+
+// mixin card-category(index,title,description)
+//   //item1
+//               #slide-item#{val}.container.slick-slide
+//                 .slide-wrapper
+//                   .img-header
+//                     img.img-fluid.w-100(src="images/forum-img2.jpg" alt="Forum Image")
+//                     .input-group
+//                       button
+//                         i.far.fa-comments
+//                         span.topic-number 4
+//                       button
+//                         i.far.fa-heart
+//                         span.like-number 4
+//                   .article-section
+//                     h4.forum-catogy = title
+//                     p.forum-review.text-truncate(style="max-width: 100%")  = description  
 
 doctype html
 html(lang="en")
@@ -31,13 +48,10 @@ html(lang="en")
     link(rel="stylesheet" href="css/join-our-forum.css")
     link(rel="stylesheet" href="css/footer.css")
     link(rel="stylesheet" type="text/css" href="slick-master/slick/slick.css")
-
-    link(rel="stylesheet" href="css/forum.css")
-
-    
     // Latest compiled and minified CSS
     link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css")
     link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous")
+    link(rel="stylesheet" href="css/forum.css")
     link(href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet")
     link(href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet")
     link(href="https://fonts.googleapis.com/css?family=Andika" rel="stylesheet")
@@ -148,7 +162,7 @@ html(lang="en")
             //cell1
             .item-cell.col-lg-3.col-12#news-cell.d-flex.justify-content-between
               .thumb-icon.my-auto.text-center
-                i.fas.fa-thumbtack
+                i.far.fa-newspaper
               .cell-content.text-right.my-auto
                 p.article-cell.m-0.text-uppercase#news-article news
                 p.number-of-cell.m-0.text-uppercase#number-news 18
@@ -162,7 +176,7 @@ html(lang="en")
             //cell3
             .item-cell.col-lg-3.col-12#posts-cell.d-flex.justify-content-between
               .thumb-icon.my-auto
-                i.fas.fa-thumbtack
+                i.fas.fa-bullhorn
               .cell-content.text-right.my-auto
                 p.article-cell.m-0.text-uppercase#posts-article posts
                 p.number-of-cell.m-0.text-uppercase#number-posts 9
@@ -172,13 +186,14 @@ html(lang="en")
             footer.d-flex.container-fluid.m-0.p-0.text-left.justify-content-between
                 
                 h4.main-title.text-uppercase join our forums
-                div.control-btn.my-auto
-                  p View all
-                    span.btn-control-group.my-auto.ml-1
-                      i.fas.fa-chevron-left#preAr
-                  
-                      i.fas.fa-chevron-right#nextAr
+                div.control-btn.my-auto.d-flex
+                  div
+                    a(href="#").view-all-btn.m-0.text-uppercase.p-2 View all
+                  div.btn-control-group
+                    i.fas.fa-chevron-left#preAr.p-1
+                    i.fas.fa-chevron-right#nextAr.p-1
             #middle-wrapper.container-fluid
+              
               //item1
               #slide-item1.container.slick-slide
                 .slide-wrapper
@@ -281,7 +296,7 @@ html(lang="en")
             div.container-fluid.text-right
               a
                 button.btn.text-uppercase View all
-              
+
 
               
               
