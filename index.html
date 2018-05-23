@@ -90,8 +90,7 @@
     <!--        End of navigation bar-->
 
     <!--        Carousel slide data-->
-    <div class="row col-lg-12 d-flex justify-content-center">
-        <div class="row mx-auto registerform">
+     
         <form id="loginPanel">
                 <div class="ava">
                     <div id="avaimage"></div>
@@ -117,13 +116,21 @@
                     <div class="hidden">
                         <span id="alertlogin2" class="hidden_alert2">Invalid Password</span>
                     </div> 
+                    <div style="margin-top: -1%">
+                        <div id="checkRemember"><input type="checkbox" id="btnremember" class="form-control input-lg"> </div>
+                        <div id="rememberme"><p> Remember me</p></div>
+                    </div>
+                    
                 </div>
                 <div class="loginform-group">
                     <input type="button" value="Login" onclick="checkUserLogin()" id="Loginbutton" />
-                    <span id="linkregi"><a href="register.html">Register</a></span>
+                    <div>
+                        <div id="linkregi"><a href="register.html">Register</a> </div>
+                        <div id="linkeditpass"><a href="register.html">Forgot password?</a></div>
+                    </div>
+                    
                 </div>
-        </form></div> 
-    </div>
+        </form> 
      
 
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" interval="5000">

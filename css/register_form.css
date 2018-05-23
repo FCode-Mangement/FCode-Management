@@ -34,10 +34,17 @@
 	width: 100%; 
 } 
 .hidden {
-	width: 100%;
+	width: 100%;height: 25px;
 }
 .hidden_alert {color: #f45b53;visibility: hidden; text-align: left;}
 .hidden_alert2 {color: #f45b53;visibility: hidden; text-align: center;}
+#checkRemember {width: 7%; height: 20px;float: left;}
+#rememberme{
+	font-size: 15px; height: 20px; color:#696c72; width: 50%;float: left;  
+}
+#rememberme p{
+	margin-top: -5px; margin-left: 2px;
+}
 .term {
 	color: #f45b53;
 }
@@ -46,6 +53,9 @@
 	 text-decoration-line: underline;
 	 cursor:pointer;
 } 
+#agree{
+	width: 15px;height: 15px; margin: -10px 0 0 50%;
+}
 #agree:hover{
 	cursor:pointer;
 }
@@ -57,11 +67,11 @@
    	display: none;
 }
 #agreeform{
-	width: 100%;  
+	width: 100%;  height: 45px;
 } 
 #submitbutton{
 	border-radius: 10px; 
-	background-color: #f4613a;
+	background-color: #ff7854;
 	border: none;
 	height: 35px;
 	width: 100%;
@@ -70,19 +80,20 @@
 #submitbutton:hover{
 	cursor: pointer;
 	padding-top: 10px;
-	background-color: #f9a690;
+	background-color: #ef4517;
 }
 #Loginbutton{
 	border-radius: 10px; 
-	background-color: #4caa84;
+	background-color: #42c48f;
 	border: none;
 	height: 35px;
 	width: 100%;
-	color: white;
+	color: white; 
+	float: left;
 }
 #Loginbutton:hover{
 	cursor: pointer; 
-	background-color: #75d8b0;
+	background-color: #179361;
 }
 .contact_us{
 	background-color: white; 
@@ -149,21 +160,21 @@
 		100% {opacity: 1}
 	}
 .loginform-group{
-	width: 100%;
-	height: 14%;
-	margin-bottom: 5%;margin-top: 2%;
+	width: 100%; 
+	/*margin-bottom: 5%;margin-top: 2%;*/
 }
 .ava{
 	width: 100%;
 	height: 47%; 
-	margin-bottom: 2px;  
+	margin-bottom: 2%;  
 }
+
 #avaimage{
-	height:100%; width: 50%;
+	height:100%; 
 	background-image: url(avatar.png); background-size: 100% 100%;
 	background-repeat: no-repeat; 
 	border-radius: 100%;
-	margin-left: 25%;
+	 
 }
 #loginPanel{
 	background: white; position: fixed; z-index: 10; display: none;   
@@ -171,7 +182,19 @@
 	 
 }
 #linkregi{
-	color: #5c95f2;
+	color: #5c95f2;  float: left;width: 30%;height: 30px;
+}
+#linkregi a:hover{
+	text-decoration: none; color: #145cd1;
+}
+#linkeditpass{
+	color: #5c95f2;float: left;width: 70%;height: 30px;
+}
+#linkeditpass a{
+	float: right;
+}
+#linkeditpass a:hover{
+	text-decoration: none; color: #145cd1;
 }
 @media (min-width: 991px) {
 	.register_title > h2{
@@ -208,7 +231,7 @@
 	}
 	#loginPanel{
 		width: 35%;
-		height: 400px; 
+		height: 395px; 
 		 right:5%;
 		 padding: 1% 1% 3% 1%; 
 		 top:70px;
@@ -218,6 +241,10 @@
     }
     #linkregi{
 		font-size: 16px;
+	}
+	#avaimage{
+		width: 41%;
+		margin-left: 30%;
 	}
 }
 @media (max-width: 990px) {
@@ -255,19 +282,25 @@
 	}
 	#loginPanel{
 		width: 40%;
-		height: 350px;
+		height: 390px;
 		right:6%;
 		padding: 2% 2% 5% 2%; 
 	}
 	.hidden_alert2{
 		margin-top: -15px;
     	font-size: 14px;
-    }
-    #linkregi{
-		margin-top: -15px;
-    	font-size: 14px;
+    } 
+	#avaimage{
+		width: 44%;
+		margin-left: 28%;
 	}
-}
+	#linkregi{
+		font-size: 15px;
+	}
+	#linkeditpass{
+		font-size: 15px;	
+	}
+} 
 @media (max-width: 768px) { 
 	.register_title > h2{
         font-size: 25px; 
@@ -303,7 +336,7 @@
 	}
 	#loginPanel{
 		width: 80%;
-		height: 330px; 
+		height: 370px; 
 		right: 13%;
 		padding: 1.5% 4% 7% 4%; 
 	}
@@ -311,8 +344,23 @@
 		margin-top: -15px;
     	font-size: 14px;
     }
-    #linkregi{
-		margin-top: -15px;
-    	font-size: 14px;
+	#avaimage{
+		width: 30%;
+		margin-left: 36%; 
+	}
+	#linkregi{
+		font-size: 14px;
+	}
+	#linkeditpass{
+		font-size: 14px;	
+	}
+}
+@media (max-width: 500px){
+	#avaimage{
+		width: 50%;
+		margin-left: 26%;
+	}
+	#loginPanel{ 
+		height: 390px;  
 	}
 }
