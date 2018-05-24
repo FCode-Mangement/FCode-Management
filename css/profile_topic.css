@@ -1,0 +1,123 @@
+.wrap-profile-topic {
+    margin-top: -7%;
+    background-color: white;
+    position: relative;
+    z-index: 5;
+    margin-bottom: 2%;
+    padding-bottom: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#header-img {
+    width: 100%;
+}
+
+.wrap-avartar-profile-P {
+    padding: 8%;
+    border: 1px solid #DDDDDD;
+    margin-top: 15%;
+    background-color: white;
+}
+
+.avartar-profile-P {
+    width: 100%;
+}
+
+.wrap-cate-profile-P {
+    padding: 0;
+}
+.cate-profile-P {
+    list-style-type: none;
+    padding: 5% 0 5% 10%;
+    font-size: 20px;
+    border: 1px solid #DDDDDD;
+}
+
+.cate-profile-P > a {
+    color: black;
+    transition: 0.5s;
+}
+
+.cate-profile-P > a:hover {
+    text-decoration: none;
+    color: #1D84B5;
+}
+
+.profile-topic-page-P {
+    display: inline-block;
+}
+
+.profile-topic-page-P > a {
+    color: black;
+    border: 1px solid #DDDDDD;
+    padding: 7px 10px;
+    transition: 0.5s;
+}
+
+.profile-topic-page-P > .profile-topic-active-page-P:hover {
+    text-decoration: none;
+}
+
+.profile-topic-page-P > .profile-topic-unactive-page-P:hover {
+    color: black;
+    text-decoration: none;
+    border-color: black;
+}
+
+.wrap-topic-table-P {
+    font-size: 20px;
+    border-collapse: collapse;
+    margin-bottom: 2%;
+}
+
+.profile-topic-content-P, .profile-topic-heading-P {
+    padding: 20px 20px;
+    border: 1px solid #DADADA;
+}
+
+.profile-topic-heading-P {
+    background-color: #F1F1F1;
+}
+
+.profile-topic-cate-P>p {
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+.profile-topic-content-P > a {
+    color: black;
+}
+
+.profile-topic-content-P > a:hover {
+    color: #0D78BF;
+    text-decoration: none;
+}
+
+.profile-topic-interact-P {
+    text-align: center;
+}
+
+@media (max-width: 990px) {
+    .cate-profile-P {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrap-cate-profile-P {
+        display: flex;
+    }
+    
+    .cate-profile-P {
+        text-align: center;
+        font-size: 15x;
+        padding-left: 0px;
+        flex: 1;
+        width: 25%;
+        position: relative;
+        top: 50%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+}
