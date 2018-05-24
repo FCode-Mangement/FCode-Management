@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/join-our-forum.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="js/login.js">
+    <link rel="stylesheet" href="css/register_form.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
@@ -26,10 +27,11 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-    <script src="js/login.js"></script>
+    <script src="js/login.js"></script> 
+    <script src="js/register.js"></script>
 </head>
 
-<body style="background-color: #FBEAFF;">
+<body style="background-color: #FBEAFF;" onload="run_deco()">
     <!--       Navigation bar-->
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="navigation-p">
@@ -73,72 +75,15 @@
                             <button class="btn btn-outline-success" type="submit"><i class="fa fa-search"></i></button>
                         </div>
                     </div>
-                </li>
-                <li class="nav-item px-2">
-                    <a class="nav-link text-center" style="cursor: pointer;" onclick="showLogin()">
-                            Log in <i class="fas fa-sign-in-alt"></i>
-                        </a>
-                </li>
+                </li> 
             </ul>
         </div>
     </nav>
 
     <!--        End of navigation bar-->
 
-    <!--        Carousel slide data--->
-    <div class="row col-lg-12 d-flex justify-content-center">
-        <div class="row col-lg-6 " id="loginPanel" style="background: white; position: fixed; height: auto; z-index: 10; display: none">
-            <h1 class="display-4" align="center">Login</h1>
-            <hr>
-            <div id="login">
-                <table width="100%">
-                    <tr>
-                        <td>
-                            <font style="color: #6B717E; font-size: 20px">Username or E-mail</font>
-                        </td>
-                        <td>
-                            <input type="text" size="30" style="height: 35px">
-                        </td>
-                    </tr>
-                </table>
-                <table width="163%">
-                    <tr>
-                        <td>
-                            <font style="color: #6B717E; font-size: 20px">Password</font>
-                        </td>
-                        <td>
-                            <input type="password" size="30" style="height: 35px">
-                        </td>
-                    </tr>
-                </table>
-                <table>
-                    <tr>
-                        <td>
-                            <font style="color: #6B717E; font-size: 20px">Connect with us:</font>
-                        </td>
-                    </tr>
-                    <td>
-                        <a href="https://www.facebook.com/fcodefpt/?fref=nf"><img src="img/img_facebook.png" alt="" width="60px" height="60px"></a>
-                    </td>
-                </table>
-            </div>
-
-            <table width="100%">
-                <tr>
-                    <td>
-                        <input type="checkbox" name="" value="">
-                        <font style="color: #6B717E; font-size: 20px">Remember Me</font>
-                    </td>
-                    <td width="50px">
-                        <input class="btn btn-primary" type="submit" value="Login" style="width: 70px" ; height="50px">
-                    </td>
-                </tr>
-            </table>
-            <hr>
-            <br>
-            <a href="">Register</a>
-        </div>
-    </div>
+    <!--        Carousel slide data-->
+    
 
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" interval="5000">
         <div class="carousel-inner" role="listbox">
@@ -187,61 +132,115 @@
             </span>
     </div>
 
-    <form name="Thi" method="post" style="text-align: center;">
+     <div class="container wrap-register" style="background-color: white;">
+        <div class="row" style="padding-top: 100px">
+            <div class="col-md-7 reigster-form" style="background-color: white;">
+             
+                    <div class="row mx-auto register_title">
+                        <h2>Register</h2>
+                    </div>
+                        <div class="row mx-auto registerform">
+                        <form name="Thi" method="post" style="text-align:justify;">
+                            <div class="form-group thisform">
+                                
+                                <div class="input_field"><div class="imageicon" style="background-image: url(img/user.png);"></div>
+                                    <div class="register_text">
+                                        <input type="text" class="form-control input-lg" id="username" placeholder="Username">
+                                    </div>
+                                    
+                                </div> 
+                                <div class="hidden">
+                                     <span id="alert1" class="hidden_alert">Username is 6 or more characters, including only numbers, lower & uppercase letters</span>
+                                </div> 
+                            </div>
+                            <div class="form-group thisform">
+                                
+                                <div class="input_field"><div class="imageicon" style="background-image: url(img/user2.png);"></div>
+                                    <div class="register_text">
+                                        <input type="text" class="form-control input-lg" id="fullname" placeholder="Fullname">
+                                    </div> 
+                                </div> 
+                                <div class="hidden">
+                                    <span id="alert2" class="hidden_alert">Full name is 3 or more characters, including only spaces, lower & uppercase letters</span>
+                                </div> 
+                            </div>
+                            <div class="form-group thisform">
+                               
+                                <div class="input_field"> <div class="imageicon" style="background-image: url(img/email.png);"></div>
+                                    <div class="register_text">
+                                        <input type="text" class="form-control input-lg" id="email" placeholder="Email">
+                                    </div> 
+                                </div> 
+                                <div class="hidden">
+                                     <span id="alert3" class="hidden_alert">Invalid Email</span>
+                                </div> 
+                            </div>
+                            <div class="form-group thisform">
+                                
+                                <div class="input_field"><div class="imageicon" style="background-image: url(img/key.png);"></div>
+                                    <div class="register_text">
+                                        <input type="password" class="form-control input-lg" id="password" placeholder="Password">
+                                    </div> 
+                                </div> 
+                                <div class="hidden">
+                                    <span id="alert4" class="hidden_alert">Password is 6 or more characters, including only numbers, lower & uppercase letters</span>  
+                                </div>
+                            </div>
+                            <div class="form-group thisform"> 
 
-        <hr>
-        <div style="width: 100%; text-align:center; margin: auto">
-            <table align="center" width="50%">
-                <h1>Register</h1>
-                <tr>
-                    <td style="text-align:right; width: 80%; ">Name
-                        <font color="red">*</font>
-                    </td>
-                    <td align="left"><input type="text" size="60" required="required" /> </td>
-                </tr>
-                <tr>
-                    <td style="text-align:right;">Email
-                        <font color="red">*</font>
-                    </td>
-                    <td align="left"><input type="text" size="60" /> </td>
-                </tr>
-                <tr>
-                    <td style="text-align:right;">Username
-                        <font color="red">*</font>
-                    </td>
-                    <td align="left"><input type="text" size="60" /> </td>
-                </tr>
-                <tr>
-                    <td style="text-align:right"> Pasword
-                        <font color="red">*</font>
-                    </td>
-                    <td align="left"><input type="password" size="60" value="" required="requided" /> </td>
-                </tr>
-                <tr>
-                    <td style="text-align:right"> Confirm Pasword
-                        <font color="red">*</font>
-                    </td>
-                    <td align="left"><input type="password" size="60" value="" required="requided" /> </td>
-                </tr>
-                <tr>
-                    <td style="text-align:right">
-                    </td>
-                    <td style="text-align: left" >
-                        <div style="word-wrap: break-word; width: 100%;">
+                                <div class="input_field"><div class="imageicon" style="background-image: url(img/key2.png);"></div>
+                                    <div class="register_text">
+                                        <input type="password" class="form-control register_text input-lg" id="confirmpassword" placeholder="Confirm password">
+                                    </div> 
+                                </div> 
+                                <div class="hidden">
+                                    <span id="alert5" class="hidden_alert">Password not matched</span>
+                                </div> 
+                            </div> 
+
+                            <div class="form-group thisform" id="agreeform">
+                                <p style="text-align: center;"> Đồng ý <span class="term" onclick="openTerm()"> điều khoản clb</span></p><input type="checkbox" id="agree" class="form-control"/>
+                            </div> 
+                            <div id="term_content">
+                                <div style="word-wrap: break-word; width: 100%;">
                             Đến với F-code, các thành viên có cơ hội trao đổi mọi thắc mắc, chia sẻ niềm đam mê yêu thích của mình với ngành lập trình. Câu lạc bộ là môi trường thân thiện để các sinh viên Đại học FPT có cơ hội giao lưu học tập, chia sẻ kiến thức của bản thân cũng như trao dồi từ anh chị đi trước. Ngoài ra, khi tham gia vào câu lạc bộ F-code, các bạn còn có thêm những kĩ năng mềm như thuyết trình trước đám đông, làm việc nhóm, .. Câu lạc bộ đang tìm kiếm thành viên với các yếu tố:
                             <br> 💡 Nhiệt huyết với câu lạc bộ <br> 💡 Có tinh thần học hỏi, tìm tòi <br> 💡 Tôn trọng các anh chị khóa trên <br> 💡 Có tinh thần trách nhiệm
-                        </div>
-                    </td>
-                </tr>
-            </table>
+                                </div>
+                            </div> 
+                            <div class="form-group thisform" style="padding-top: 10px">
+                                <input type="button" value="Submit" onclick="checkregister()" id="submitbutton" />
+                            </div>
+                        </form>
+                    </div> 
+            </div>
+            
+            <div class="col-md-5">
+                <div class="row mx-auto contact_us">
+                    <h3 style="font-style:bold">Contact Us</h3>
+                    <p><br><span class="title_contact">Facebook:</span> facebook.com/fcodefpt/<br></p>
+                    <p><span class="title_contact">Email:</span> fcode.fptuhcm@gmail.com <br> </p>
+                    <p><span class="title_contact"> Phone:</span> 0169 242 5183</p>
+                </div>
+                <div class="row mx-auto" id="decoration">
+                    <img src="img/fcode4.jpg">
+                    <img src="img/fcode1.jpg">
+                    <img src="img/fcode2.jpg">
+                    <img src="img/fcode3.jpg">
+                </div>
+            </div>
         </div>
-    <hr>
+    </div>
+    <div id="noti_field">
+        <div id="notification">
+            <div class="notipart1">
+                <p>Bạn đã đăng kí tài khoản thành công, vui lòng đợi admin duyệt</p>
+            </div>
+            <div class="notipart2">
+                <input type="button" name="Confirmar" value="Confirm" onclick="exitNoti()">
+            </div>
+        </div>
+    </div>
     
-        <p>
-            <font color="red">*</font> Denotes a required field </p>
-        <input type="submit" value="Submit" />
-
-    </form>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light bottom">
         <div class="container footer-p">

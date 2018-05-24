@@ -10,17 +10,41 @@
 	padding: 5% 5% 15% 5%;
 	width: 100%; 
 }
+.input_field{
+	width: 100%;
+	height: 40px;
+	box-sizing: border-box;
+	border-style: solid;
+	border-color: lightblue; 
+	border-radius:20px;
+
+}
 .register_text{
-	width: 92%; 
-} 
+	width: 91%; height: 100%; float: right; background-repeat: none;
+}  
+.register_text input{
+	border-style: none;
+	border-radius: 20px;height: 99.5%;
+}
+.imageicon{
+	width: 7%; height: 100%;float: left;
+	background-size: 100% 100%;
+}
 .thisform{
 	width: 100%; 
 } 
-.imageicon{
-	width: 5%; height: 25px;
-	background-size: 100% 100%;
+.hidden {
+	width: 100%;height: 30px;
 }
-.hidden_alert {color: red;visibility: hidden; text-align: left;width: 100%; }
+.hidden_alert {color: #f45b53;visibility: hidden; text-align: left;}
+.hidden_alert2 {color: #f45b53;visibility: hidden; text-align: center;}
+#checkRemember {width: 7%; height: 20px;float: left;}
+#rememberme{
+	font-size: 15px; height: 20px; color:#696c72; width: 50%;float: left;  
+}
+#rememberme p{
+	margin-top: -5px; margin-left: 2px;
+}
 .term {
 	color: #f45b53;
 }
@@ -29,6 +53,9 @@
 	 text-decoration-line: underline;
 	 cursor:pointer;
 } 
+#agree{
+	width: 15px;height: 15px; margin: -10px 0 0 50%;
+}
 #agree:hover{
 	cursor:pointer;
 }
@@ -40,11 +67,11 @@
    	display: none;
 }
 #agreeform{
-	width: 100%;  
+	width: 100%;  height: 45px;
 } 
 #submitbutton{
 	border-radius: 10px; 
-	background-color: #f4613a;
+	background-color: #ff7854;
 	border: none;
 	height: 35px;
 	width: 100%;
@@ -53,7 +80,20 @@
 #submitbutton:hover{
 	cursor: pointer;
 	padding-top: 10px;
-	background-color: #f9a690;
+	background-color: #ef4517;
+}
+#Loginbutton{
+	border-radius: 10px; 
+	background-color: #42c48f;
+	border: none;
+	height: 35px;
+	width: 100%;
+	color: white; 
+	float: left;
+}
+#Loginbutton:hover{
+	cursor: pointer; 
+	background-color: #179361;
 }
 .contact_us{
 	background-color: white; 
@@ -62,6 +102,7 @@
 	width: 90%; 
 	color: grey;
 	border-style: solid;
+	border-width: 1px;
 	border-color: #a6a7a8; 
 	box-sizing: border-box;
 }
@@ -75,12 +116,88 @@
 	width: 90%; 
 	overflow: hidden;
 }
+#noti_field{
+	z-index: 3;position: absolute;position: fixed;
+	top: 0; left: 0;
+	width: 100%;height: 100%;
+	background-color: rgba(10, 10, 10,0.2);
+	display: none;
+}
+#notification{
+	z-index: 3;position: absolute;position: fixed;
+	top:30%;
+	background-color: white;
+	box-sizing: border-box;
+	border-radius: 20px;
+
+}
+.notipart1{
+	padding:10% 5% 10% 5%;
+	width: 100%; height: 60%;
+	border-bottom: 0.5px solid;
+	border-color: lightgrey;
+	color: #e2966c; text-align: center;
+}
+.notipart2{
+	padding:4% 10%;
+	width: 100%; height: 40%;
+}
+.notipart2 input{ 
+	width: 35%; height: 90%;
+	float: right;
+	border-radius: 10px;
+	background-color: #f4613a;
+	border-style: none;
+	color: white; font-size: 16px;
+}
+.notipart2 input{
+	cursor: pointer;
+}
 #decoration img {width: 100%;height: 100%;float: left;display: block; animation-name: deco_content;animation-duration: 0.2s;}
 	@keyframes deco_content
 	{
 		0% {opacity: 0.4}
 		100% {opacity: 1}
 	}
+.loginform-group{
+	width: 100%; 
+	/*margin-bottom: 5%;margin-top: 2%;*/
+}
+.ava{
+	width: 100%;
+	height: 47%; 
+	margin-bottom: 2%;  
+}
+
+#avaimage{
+	height:100%; 
+	background-image: url(avatar.png); background-size: 100% 100%;
+	background-repeat: no-repeat; 
+	border-radius: 100%;
+	 
+}
+#loginPanel{
+	background: white; position: fixed; z-index: 10; display: none;   
+	border-radius: 15px;border: 0.5px solid; color: #c4c4c4;
+	 
+}
+#linkregi{
+	color: #5c95f2;  float: left;width: 30%;height: 30px;
+}
+#linkregi a:hover{
+	text-decoration: none; color: #145cd1;
+}
+#linkeditpass{
+	color: #5c95f2;float: left;width: 70%;height: 30px;
+}
+#linkeditpass a{
+	float: right;
+}
+#linkeditpass a:hover{
+	text-decoration: none; color: #145cd1;
+} 
+
+
 @media (min-width: 991px) {
 	.register_title > h2{
         font-size: 35px; 
@@ -105,6 +222,31 @@
 	}
 	#decoration{
 		height: 350px;
+	}
+	#notification{
+		height: 180px;
+		width: 25%;
+		left:40%; 
+	}
+	.notipart1{
+		font-size: 18px;
+	}
+	#loginPanel{
+		width: 35%;
+		height: 400px; 
+		 right:5%;
+		 padding: 1% 1% 3% 1%; 
+		 top:70px;
+	}
+	.hidden_alert2{
+    	font-size: 16px;
+    }
+    #linkregi{
+		font-size: 16px;
+	}
+	#avaimage{
+		width: 41%;
+		margin-left: 30%;
 	}
 }
 @media (max-width: 990px) {
@@ -132,7 +274,35 @@
 	#decoration{
 		height: 200px;
 	}
-}
+	#notification{
+		height: 150px;
+		width: 40%;
+		left:30%; 
+	}
+	.notipart1{
+		font-size: 17px;
+	}
+	#loginPanel{
+		width: 40%;
+		height: 395px;
+		right:6%;
+		padding: 2% 2% 5% 2%; 
+	}
+	.hidden_alert2{
+		margin-top: -15px;
+    	font-size: 14px;
+    } 
+	#avaimage{
+		width: 44%;
+		margin-left: 28%;
+	}
+	#linkregi{
+		font-size: 15px;
+	}
+	#linkeditpass{
+		font-size: 15px;	
+	}
+} 
 @media (max-width: 768px) { 
 	.register_title > h2{
         font-size: 25px; 
@@ -158,4 +328,47 @@
 	#decoration{
 		height: 360px;
 	}
+	#notification{
+		height: 180px;
+		width: 60%;
+		left:20%; 
+	}
+	.notipart1{
+		font-size: 16px;
+	}
+	#loginPanel{
+		width: 80%;
+		height: 375px; 
+		right: 13%;
+		padding: 1.5% 4% 7% 4%; 
+	}
+	.hidden_alert2{
+		margin-top: -15px;
+    	font-size: 14px;
+    }
+	#avaimage{
+		width: 30%;
+		margin-left: 36%; 
+	}
+	#linkregi{
+		font-size: 14px;
+	}
+	#linkeditpass{
+		font-size: 14px;	
+	}
+}
+@media (max-width: 500px){
+	#avaimage{
+		width: 50%;
+		margin-left: 26%;
+	}
+	#loginPanel{ 
+		height: 395px;  
+	}
+}
+@media (max-width: 325px){
+	#avaimage{
+		width: 70%;
+		margin-left: 15%;
+	} 
 }
