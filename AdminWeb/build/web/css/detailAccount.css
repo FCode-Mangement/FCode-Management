@@ -1,0 +1,35 @@
+
+.borderless{
+  border: none;
+}
+.mainKind{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: #272c33;
+  color: #c8c9ce;
+}
+#col-list-left{
+  background: #272c33;
+  border-left: 5px solid #57dcd4;
+  border-radius: 0px;
+}
+#list-left{
+  background: red;
+}
+.mainKind:hover{
+  font-weight: 500;
+   color:  #c8c9ce;
+}
+.detailInfor{
+  background: rgb(224, 226, 229);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+
+@media only screen and (min-width: 1200px) {
+    #row-list{
+    height: 250px;
+}
+}
