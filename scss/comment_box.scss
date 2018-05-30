@@ -4,6 +4,9 @@
    margin-top: 70px;
     .d-flex{
     	position: relative;
+        // form {
+        //     padding-left: -15px;
+        // }
     	#left{
     		position: absolute;
     		top: 5px;
@@ -16,7 +19,7 @@
         #right{
             width: 100%;
             position: relative;
-        	margin-left: 30px;
+        	margin-left: 10px;
             textarea{
             	// padding: 2rem;
                 outline: none;
@@ -35,7 +38,7 @@
             .emojionearea-editor{
             	padding: 6px 24px 6px 25px;
             }
-            button{
+            #send-btn{
                 color: white;
                 font-weight: 700;
                 background: linear-gradient(135deg, #6e8efb, #a777e3);
@@ -48,8 +51,7 @@
             }
         }
     }
-}
-textarea {
+    textarea {
     width: 100%;
    padding: 3px;
   // height: 24px;
@@ -58,4 +60,6 @@ textarea {
   overflow: hidden;
   resize: none;
   height: 100px;
+}
+
 }

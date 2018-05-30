@@ -35,7 +35,7 @@
     <link rel="stylesheet" type="text/css" href="css/comment_box.css">
     <script type="text/javascript" src="js/emoji.js"></script>
     <!-- login-form -->
-    <link rel="stylesheet" type="text/css" href="css/login-form.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/login-form.css"> -->
     <script type="text/javascript" src="js/login-form.js"></script>
     <script type="text/javascript">
     new WOW().init();
@@ -239,17 +239,18 @@
                 <h4 class="text-uppercase text-left">comment</h4>
                 <div class="d-flex mx-auto container">
                     <div class="rounded-circle" id="left"><img class="rounded-circle" src="img/user-image.jpeg" /></div>
-                    <!-- <form>
-                      
-                    </form> -->
-                    <div id="right">
+                    <form class="container-fluid">
+                       <div id="right">
                       
                         <textarea class="text-left" id="emoji-area" placeholder="Type here"></textarea>
                         <div class="btn-wrapper d-flex justify-content-end">
-                          <button class=" btn my-2 p-2 text-uppercase" type="submit"> send </button>
+                          <input class=" btn my-1 p-2 text-uppercase" type="submit" name="" value="send" id="send-btn">
+                          <!-- <button class=" btn my-2 p-2 text-uppercase" type="submit"> send </button> -->
                         </div>
                         
                     </div>
+                    </form>
+                   
                 </div>
               </div>
             </div>

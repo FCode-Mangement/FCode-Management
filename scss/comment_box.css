@@ -3,6 +3,8 @@
   margin-top: 70px; }
   #comment-wrapper .d-flex {
     position: relative; }
+    #comment-wrapper .d-flex form {
+      padding-left: -15px; }
     #comment-wrapper .d-flex #left {
       position: absolute;
       top: 5px;
@@ -14,7 +16,7 @@
     #comment-wrapper .d-flex #right {
       width: 100%;
       position: relative;
-      margin-left: 10px; }
+      margin-left: 30px; }
       #comment-wrapper .d-flex #right textarea {
         outline: none;
         border-radius: 0 5px 5px 0;
@@ -28,22 +30,23 @@
         width: 100%; }
       #comment-wrapper .d-flex #right .emojionearea-editor {
         padding: 6px 24px 6px 25px; }
-      #comment-wrapper .d-flex #right #send-btn {
+      #comment-wrapper .d-flex #right button {
         color: white;
         font-weight: 700;
         background: linear-gradient(135deg, #6e8efb, #a777e3);
         border-radius: 4px;
         transition: box-shadow .5s ease, -webkit-transform .2s ease;
         transition: box-shadow .5s ease, transform .2s ease; }
-        #comment-wrapper .d-flex #right #send-btn:hover {
+        #comment-wrapper .d-flex #right button:hover {
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); }
-  #comment-wrapper textarea {
-    width: 100%;
-    padding: 3px;
-    font-size: 16px;
-    line-height: 24px;
-    overflow: hidden;
-    resize: none;
-    height: 100px; }
+
+textarea {
+  width: 100%;
+  padding: 3px;
+  font-size: 16px;
+  line-height: 24px;
+  overflow: hidden;
+  resize: none;
+  height: 100px; }
 
 /*# sourceMappingURL=comment_box.css.map */

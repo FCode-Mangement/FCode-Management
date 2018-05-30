@@ -10,10 +10,13 @@ a, a:visited, a:link, a:hover, a:link:active, a:visited:active {
   padding: 0; }
 
 .search-section {
+  overflow: hidden;
   position: relative; }
   .search-section .search-inner {
-    position: relative;
+    position: absolute;
     top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 3;
     font-family: 'Lato',sans-serif;
     padding: 0; }
@@ -46,7 +49,7 @@ a, a:visited, a:link, a:hover, a:link:active, a:visited:active {
         font-size: 1.15rem;
         font-weight: 700; }
         .search-section .search-inner .input-group input[type="text"]:focus {
-          border-color: rgba(255, 255, 255, 0.2); }
+          border-color: rgba(255, 255, 255, 0.3); }
       .search-section .search-inner .input-group .input-group-append button {
         min-width: 80px;
         border-radius: 0;
@@ -70,7 +73,7 @@ a, a:visited, a:link, a:hover, a:link:active, a:visited:active {
     width: 100%;
     height: 100%;
     background-color: #35838d;
-    opacity: 0.4;
+    opacity: 0.7;
     z-index: 1; }
   @media (max-width: 576px) {
     .search-section {
@@ -86,19 +89,20 @@ a, a:visited, a:link, a:hover, a:link:active, a:visited:active {
   background-color: #ddd;
   padding-bottom: 50px; }
   .body-wrapper .body-outner {
+    z-index: 9;
     width: 90%;
     background-color: #fefefe; }
     @media (min-width: 960px) {
       .body-wrapper .body-outner {
         position: relative;
-        z-index: 2;
+        z-index: 9;
         margin-top: -50px; } }
     @media (max-width: 576px) {
       .body-wrapper .body-outner {
         width: 100%;
         background-color: #fefefe;
         position: relative;
-        z-index: 2;
+        z-index: 9;
         margin-top: 0px; } }
     @media (max-width: 576px) {
       .body-wrapper .body-outner #body-inner {
@@ -150,5 +154,8 @@ a, a:visited, a:link, a:hover, a:link:active, a:visited:active {
 
 .back-parallax {
   background-attachment: fixed; }
+
+.front-parallax {
+  transition: all 0 ease-in-out; }
 
 /*# sourceMappingURL=news.css.map */
