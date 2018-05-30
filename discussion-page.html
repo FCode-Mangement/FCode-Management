@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/discussion-page.css">
     <link rel="stylesheet" href="js/login.js">
-<!--    <link rel="stylesheet" href="js/custom.js">-->
+    <!--    <link rel="stylesheet" href="js/custom.js">-->
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
@@ -45,44 +45,17 @@
         <div class="collapse navbar-collapse" id="collapse_target">
 
             <ul class="navbar-nav justify-content-end justify-content-center w-100" style="font-size: 20px;">
-                <li class="nav-item px-2">
-                    <a class="nav-link text-center" href="index.html">
-                            Home
-                        </a>
-                </li>
-                <li class="nav-item px-2">
-                    <a class="nav-link text-center" href="index.html">
-                            Introduction
-                        </a>
-                </li>
-                <li class="nav-item px-2">
-                    <a class="nav-link text-center" href="index.html">
-                            News
-                        </a>
-                </li>
-                <li class="nav-item px-2">
-                    <a class="nav-link text-center" href="index.html">
-                            Discussion
-                        </a>
-                </li>
-                <li class="nav-item px-2">
-                    <a class="nav-link text-center" href="index.html">
-                            Profile
-                        </a>
-                </li>
+                <li class="nav-item px-2"><a class="nav-link text-center" href="index.html">Home</a></li>
+                <li class="nav-item px-2"><a class="nav-link text-center" href="#">News</a></li>
+                <li class="nav-item px-2"><a class="nav-link text-center" href="discussion-page.html">Discussion</a></li>
                 <li class="nav-item px-2">
                     <div class="input-group py-1 w-100 text-center">
                         <input class="form-control form-control-dark" type="text" placeholder="Search here..." aria-label="Search">
-                        <div class="input-group-append">
-                            <button class="btn btn-outline-success" type="submit"><i class="fa fa-search"></i></button>
-                        </div>
+                        <div class="input-group-append"><button class="btn btn-outline-success" type="submit"><i class="fa fa-search"></i></button></div>
                     </div>
                 </li>
                 <li class="nav-item px-2">
-                    <a class="nav-link text-center" style="cursor: pointer;" onclick="showLogin()">
-                            Log in <i class="fas fa-sign-in-alt"></i>
-                            
-                        </a>
+                    <a class="nav-link text-center" style="cursor: pointer;" onclick="showLogin()">Log in <i class="fas fa-sign-in-alt"></i></a>
                 </li>
             </ul>
         </div>
@@ -101,9 +74,7 @@
                         <td>
                             <font style="color: #6B717E; font-size: 20px">Username or E-mail</font>
                         </td>
-                        <td>
-                            <input type="text" size="30" style="height: 35px">
-                        </td>
+                        <td><input type="text" size="30" style="height: 35px"></td>
                     </tr>
                 </table>
                 <table width="163%">
@@ -111,9 +82,7 @@
                         <td>
                             <font style="color: #6B717E; font-size: 20px">Password</font>
                         </td>
-                        <td>
-                            <input type="password" size="30" style="height: 35px">
-                        </td>
+                        <td><input type="password" size="30" style="height: 35px"></td>
                     </tr>
                 </table>
                 <table>
@@ -122,9 +91,7 @@
                             <font style="color: #6B717E; font-size: 20px">Connect with us:</font>
                         </td>
                     </tr>
-                    <td>
-                        <a href="https://www.facebook.com/fcodefpt/?fref=nf"><img src="img/img_facebook.png" alt="" width="60px" height="60px"></a>
-                    </td>
+                    <td><a href="https://www.facebook.com/fcodefpt/?fref=nf"><img src="img/img_facebook.png" alt="" width="60px" height="60px"></a></td>
                 </table>
             </div>
 
@@ -148,14 +115,9 @@
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" interval="5000">
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
-                <a href="#">
-                    <!--                        <img class="d-block img-fluid" src="img/header-slide/header-slide01.jpg" alt="First slide" style="width: 100vw; height: 75hh;">-->
-                </a>
+                <a href="#"><img class="d-block img-fluid" src="img/header-slide/header-slide01.jpg" alt="First slide" style="width: 100vw; height: 75hh;"></a>
             </div>
-            <div class="carousel-item">
-                <a href="#">
-                    <!--                        <img class="d-block img-fluid" src="img/header-slide/header-slide02.jpg" alt="First slide" style="width: 100vw; height: 75hh;">-->
-                </a>
+            <div class="carousel-item"><a href="#"><img class="d-block img-fluid" src="img/header-slide/header-slide02.jpg" alt="First slide" style="width: 100vw; height: 75hh;"></a>
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -190,8 +152,8 @@
 
         <!--        search-bar-->
         <div class="col-11 row pt-5 pb-4 container mx-auto">
-            <input type="search" class="search-box col-11 pr-0 pl-4" placeholder="Search Forums...">
-            <button type="submit" class="search-button d-block col-1 px-0"><span class="fa fa-search"></span></button>
+            <input type="search" class="search-box col-9 col-sm-10 col-md-11 pr-0 pl-4" placeholder="Search Forums...">
+            <button type="submit" class="search-button d-block col-3 col-sm-2 col-md-1 px-0"><span class="fa fa-search"></span></button>
         </div>
 
         <!--        list-forum-->
@@ -199,211 +161,220 @@
 
             <!--            row-0-->
             <div class="col-12 px-0 row mx-auto main-box-gray">
-                 <div class="col-6 row px-0 mx-auto border-list-forum">
+                <div class="col-md-6 col-10 row px-0 mx-auto border-list-forum">
                     <span style="font-size: 1.2rem" class="my-auto pl-4"><strong>FORUM</strong></span>
                 </div>
-                <div class="mx-auto col-6 row text-center px-0 mx-auto">
-                    <span style="font-size: 1.2rem" class="col-3 py-4 fa-comment fa my-auto border-list-forum"></span>
-                    <span style="font-size: 1.2rem" class="mx-auto col-3 py-4 fa-comments fa my-auto border-list-forum res-comments"></span>
-                    <span style="font-size: 1.2" class="mx-auto col-6 row px-0 py-4 mx-auto border-list-forum res-time fa fa-clock"></span>
+                <div class="mx-auto col-2 col-md-6 row text-center px-0 mx-auto">
+                    <div class="col-md-3 col-12 border-list-forum">
+                        <span style="font-size: 1.2rem" class="mx-auto py-4 fa-comment fa"></span>
+                    </div>
+                    <div class="col-md-3 remove-md-div border-list-forum">
+                        <span style="font-size: 1.2rem" class="mx-auto py-4 fa-comments fa remove-md-div"></span>
+                    </div>
+                    <div class="col-md-6 remove-md-div border-list-forum">
+                        <span style="font-size: 1.2rem" class="mx-auto py-4 fa fa-clock remove-md-div"></span>
+                    </div>
                 </div>
             </div>
+
+
+
 
             <!--row-->
             <div class="col-12 px-0 row mx-auto">
-                <div class="col-6 row text-center px-0 mx-auto border-list-forum">
-                    <a href="#" class="my-auto pl-3 post-img"><img src="img/discussion-page/avatar1.jpg" alt="F-Code" class="img-forum"></a>
-                    <div class="col-10 px-4 my-auto text-left" style="line-height: 1.75; opacity: 0.85">
-                        <a href="#" class="no-decoration title-forum my-auto">Announcements</a>
+                <div class="col-md-6 col-10 row px-0 mx-auto border-list-forum">
+                    <a href="comment-post.html" class="my-auto remove-xl-div col-xl-2 pl-4 post-img"><img src="img/discussion-page/avatar1.jpg" alt="F-Code" class="img-forum mx-auto remove-xl-div"></a>
+                    <div class="col-xl-10 col-12 mx-auto my-auto text-left px-4 text-forum">
+                        <a href="comment-post.html" class="no-decoration title-forum my-auto">Announcements</a>
                         <span class="closed-forum">Closed</span>
                         <br>
-                        <p style="opacity: 0.9" class="my-auto"><em>This forum is a special forum for general announcements.</em></p>
+                        <p style="opacity: 0.9" class="my-auto res-text-title-forum"><em>This forum is a special forum for general announcements.</em></p>
                     </div>
                 </div>
-                <div class="col-6 row text-center px-0 mx-auto">
-                    <span style="font-size: 1.2rem" class="col-3 py-5 my-auto border-list-forum">4</span>
-                    <span style="font-size: 1.2rem" class="col-3 py-5 my-auto border-list-forum res-comments">4</span>
-                    <div class="col-6 row text-right px-0 mx-auto border-list-forum res-time">
-                        <div class="mx-auto my-auto" style="line-height: 1.4">
-                            <a href="#" class="no-decoration brand-name-forum">Sơn Tùng M-TP</a>
-                            <br>
-                            <a href="#" class="no-decoration post-time-forum"><span class="fa fa-clock" style="font-size: 0.8rem"></span> 1 month, 1 weeks ago</a>
+                <div class="mx-auto col-2 col-md-6 row text-center px-0 mx-auto">
+                    <div class="col-md-3 col-12 border-list-forum my-auto py-5">
+                        <span class="mx-auto res-comment">4</span>
+                    </div>
+                    <div class="col-md-3 remove-md-div border-list-forum my-auto">
+                        <span class="mx-auto res-comments remove-md-div py-5">4</span>
+                    </div>
+
+                    <div class="col-md-6 remove-md-div border-list-forum row mx-auto text-right">
+                        <div class=" my-auto col-xl-9 remove-md-div" style="line-height: 1.4">
+                            <span class="remove-md-div brand-name-forum my-auto">RichChoi</span>
+                            <span class="remove-md-div post-time-forum my-auto"><span class="fa fa-clock" style="font-size: 0.8rem"></span> 1 month, 1 weeks ago</span>
                         </div>
-                        <a href="#" class="mx-auto my-auto res-link-avatar-forum"><img src="img/discussion-page/1.png" alt="F-Code" class="rounded-circle res-avatar-forum"></a>
+                        <a href="#profile" class="remove-xl-div col-xl-3 my-auto"><img src="img/discussion-page/1.png" alt="F-Code" class="remove-xl-div my-auto rounded-circle res-avatar-forum"></a>
                     </div>
                 </div>
             </div>
 
 
 
-             <!--row-->
+            <!--    Row-->
             <div class="col-12 px-0 row mx-auto">
-                <div class="col-6 row text-center px-0 mx-auto border-list-forum">
-                    <a href="#" class="my-auto pl-3 post-img"><img src="img/discussion-page/avatar1.jpg" alt="F-Code" class="img-forum"></a>
-                    <div class="col-10 px-4 my-auto text-left" style="line-height: 1.75; opacity: 0.85">
-                        <a href="#" class="no-decoration title-forum my-auto">Announcements</a>
-                        <span class="closed-forum">Closed</span>
+                <div class="col-md-6 col-10 row px-0 mx-auto border-list-forum">
+                    <a href="comment-post.html" class="my-auto remove-xl-div col-xl-2 pl-4 post-img"><img src="img/discussion-page/avatar6.jpg" alt="F-Code" class="img-forum mx-auto remove-xl-div"></a>
+                    <div class="col-xl-10 col-12 mx-auto my-auto text-left px-4 text-forum">
+                        <a href="comment-post.html" class="no-decoration title-forum my-auto">Video Games</a>
+<!--                        <span class="closed-forum">Closed</span>-->
                         <br>
-                        <p style="opacity: 0.9" class="my-auto"><em>This forum is a special forum for general announcements.</em></p>
+                        <p style="opacity: 0.9" class="my-auto res-text-title-forum"><em>Join the discussion around video game news, reviews, and previews.</em></p>
                     </div>
                 </div>
-                <div class="col-6 row text-center px-0 mx-auto">
-                    <span style="font-size: 1.2rem" class="col-3 py-5 my-auto border-list-forum">4</span>
-                    <span style="font-size: 1.2rem" class="col-3 py-5 my-auto border-list-forum res-comments">4</span>
-                    <div class="col-6 row text-right px-0 mx-auto border-list-forum res-time">
-                        <div class="mx-auto my-auto" style="line-height: 1.4">
-                            <a href="#" class="no-decoration brand-name-forum">Sơn Tùng M-TP</a>
-                            <br>
-                            <a href="#" class="no-decoration post-time-forum"><span class="fa fa-clock" style="font-size: 0.8rem"></span> 1 month, 1 weeks ago</a>
+                <div class="mx-auto col-2 col-md-6 row text-center px-0 mx-auto">
+                    <div class="col-md-3 col-12 border-list-forum my-auto py-5">
+                        <span class="mx-auto res-comment">4</span>
+                    </div>
+                    <div class="col-md-3 remove-md-div border-list-forum my-auto">
+                        <span class="mx-auto res-comments remove-md-div py-5">2</span>
+                    </div>
+
+                    <div class="col-md-6 remove-md-div border-list-forum row mx-auto text-right">
+                        <div class=" my-auto col-xl-9 remove-md-div" style="line-height: 1.4">
+                            <span class="remove-md-div brand-name-forum my-auto">Thanos</span>
+                            <span class="remove-md-div post-time-forum my-auto"><span class="fa fa-clock" style="font-size: 0.8rem"></span> 1 month, 1 weeks ago</span>
                         </div>
-                        <a href="#" class="mx-auto my-auto res-link-avatar-forum"><img src="img/discussion-page/1.png" alt="F-Code" class="rounded-circle res-avatar-forum"></a>
+                        <a href="#profile" class="remove-xl-div col-xl-3 my-auto"><img src="img/discussion-page/2.jpg" alt="F-Code" class="remove-xl-div my-auto rounded-circle res-avatar-forum"></a>
                     </div>
                 </div>
             </div>
 
 
 
-             <!--row-->
+            <!--        Row-->
             <div class="col-12 px-0 row mx-auto">
-                <div class="col-6 row text-center px-0 mx-auto border-list-forum">
-                    <a href="#" class="my-auto pl-3 post-img"><img src="img/discussion-page/avatar1.jpg" alt="F-Code" class="img-forum"></a>
-                    <div class="col-10 px-4 my-auto text-left" style="line-height: 1.75; opacity: 0.85">
-                        <a href="#" class="no-decoration title-forum my-auto">Announcements</a>
-                        <span class="closed-forum">Closed</span>
+                <div class="col-md-6 col-10 row px-0 mx-auto border-list-forum">
+                    <a href="comment-post.html" class="my-auto remove-xl-div col-xl-2 pl-4 post-img"><img src="img/discussion-page/avatar5.jpg" alt="F-Code" class="img-forum mx-auto remove-xl-div"></a>
+                    <div class="col-xl-10 col-12 mx-auto my-auto text-left px-4 text-forum">
+                        <a href="comment-post.html" class="no-decoration title-forum my-auto">TV and Movies</a>
+                        <!--                        <span class="closed-forum">Closed</span>-->
                         <br>
-                        <p style="opacity: 0.9" class="my-auto"><em>This forum is a special forum for general announcements.</em></p>
+                        <p style="opacity: 0.9" class="my-auto res-text-title-forum"><em>Use this forum to share your opinion about films and TV Shows.</em></p>
                     </div>
                 </div>
-                <div class="col-6 row text-center px-0 mx-auto">
-                    <span style="font-size: 1.2rem" class="col-3 py-5 my-auto border-list-forum">4</span>
-                    <span style="font-size: 1.2rem" class="col-3 py-5 my-auto border-list-forum res-comments">4</span>
-                    <div class="col-6 row text-right px-0 mx-auto border-list-forum res-time">
-                        <div class="mx-auto my-auto" style="line-height: 1.4">
-                            <a href="#" class="no-decoration brand-name-forum">Sơn Tùng M-TP</a>
-                            <br>
-                            <a href="#" class="no-decoration post-time-forum"><span class="fa fa-clock" style="font-size: 0.8rem"></span> 1 month, 1 weeks ago</a>
+                <div class="mx-auto col-2 col-md-6 row text-center px-0 mx-auto">
+                    <div class="col-md-3 col-12 border-list-forum my-auto py-5">
+                        <span class="mx-auto res-comment">5</span>
+                    </div>
+                    <div class="col-md-3 remove-md-div border-list-forum my-auto">
+                        <span class="mx-auto res-comments remove-md-div py-5">16</span>
+                    </div>
+
+                    <div class="col-md-6 remove-md-div border-list-forum row mx-auto text-right">
+                        <div class=" my-auto col-xl-9 remove-md-div" style="line-height: 1.4">
+                            <span class="remove-md-div brand-name-forum my-auto">Happy Polla</span>
+                            <span class="remove-md-div post-time-forum my-auto"><span class="fa fa-clock" style="font-size: 0.8rem"></span> 1 month, 2 weeks ago</span>
                         </div>
-                        <a href="#" class="mx-auto my-auto res-link-avatar-forum"><img src="img/discussion-page/1.png" alt="F-Code" class="rounded-circle res-avatar-forum"></a>
+                        <a href="#profile" class="remove-xl-div col-xl-3 my-auto"><img src="img/discussion-page/1.png" alt="F-Code" class="remove-xl-div my-auto rounded-circle res-avatar-forum"></a>
                     </div>
                 </div>
             </div>
 
 
 
-             <!--row-->
+            <!--    Row-->
             <div class="col-12 px-0 row mx-auto">
-                <div class="col-6 row text-center px-0 mx-auto border-list-forum">
-                    <a href="#" class="my-auto pl-3 post-img"><img src="img/discussion-page/avatar1.jpg" alt="F-Code" class="img-forum"></a>
-                    <div class="col-10 px-4 my-auto text-left" style="line-height: 1.75; opacity: 0.85">
-                        <a href="#" class="no-decoration title-forum my-auto">Announcements</a>
-                        <span class="closed-forum">Closed</span>
+                <div class="col-md-6 col-10 row px-0 mx-auto border-list-forum">
+                    <a href="comment-post.html" class="my-auto remove-xl-div col-xl-2 pl-4 post-img"><img src="img/discussion-page/avatar2.jpg" alt="F-Code" class="img-forum mx-auto remove-xl-div"></a>
+                    <div class="col-xl-10 col-12 mx-auto my-auto text-left px-4 text-forum">
+                        <a href="comment-post.html" class="no-decoration title-forum my-auto">Food and Drink</a>
+                        <!--                        <span class="closed-forum">Closed</span>-->
                         <br>
-                        <p style="opacity: 0.9" class="my-auto"><em>This forum is a special forum for general announcements.</em></p>
+                        <p style="opacity: 0.9" class="my-auto res-text-title-forum"><em>The best restaurants, cafes, bars and shops in town.</em></p>
                     </div>
                 </div>
-                <div class="col-6 row text-center px-0 mx-auto">
-                    <span style="font-size: 1.2rem" class="col-3 py-5 my-auto border-list-forum">4</span>
-                    <span style="font-size: 1.2rem" class="col-3 py-5 my-auto border-list-forum res-comments">4</span>
-                    <div class="col-6 row text-right px-0 mx-auto border-list-forum res-time">
-                        <div class="mx-auto my-auto" style="line-height: 1.4">
-                            <a href="#" class="no-decoration brand-name-forum">Sơn Tùng M-TP</a>
-                            <br>
-                            <a href="#" class="no-decoration post-time-forum"><span class="fa fa-clock" style="font-size: 0.8rem"></span> 1 month, 1 weeks ago</a>
+                <div class="mx-auto col-2 col-md-6 row text-center px-0 mx-auto">
+                    <div class="col-md-3 col-12 border-list-forum my-auto py-5">
+                        <span class="mx-auto res-comment">4</span>
+                    </div>
+                    <div class="col-md-3 remove-md-div border-list-forum my-auto">
+                        <span class="mx-auto res-comments remove-md-div py-5">3</span>
+                    </div>
+
+                    <div class="col-md-6 remove-md-div border-list-forum row mx-auto text-right">
+                        <div class=" my-auto col-xl-9 remove-md-div" style="line-height: 1.4">
+                            <span class="remove-md-div brand-name-forum my-auto">Chi Pu</span>
+                            <span class="remove-md-div post-time-forum my-auto"><span class="fa fa-clock" style="font-size: 0.8rem"></span> 1 month, 4 weeks ago</span>
                         </div>
-                        <a href="#" class="mx-auto my-auto res-link-avatar-forum"><img src="img/discussion-page/1.png" alt="F-Code" class="rounded-circle res-avatar-forum"></a>
+                        <a href="#profile" class="remove-xl-div col-xl-3 my-auto"><img src="img/discussion-page/1.png" alt="F-Code" class="remove-xl-div my-auto rounded-circle res-avatar-forum"></a>
                     </div>
                 </div>
             </div>
 
 
 
-             <!--row-->
+            <!--Row-->
             <div class="col-12 px-0 row mx-auto">
-                <div class="col-6 row text-center px-0 mx-auto border-list-forum">
-                    <a href="#" class="my-auto pl-3 post-img"><img src="img/discussion-page/avatar1.jpg" alt="F-Code" class="img-forum"></a>
-                    <div class="col-10 px-4 my-auto text-left" style="line-height: 1.75; opacity: 0.85">
-                        <a href="#" class="no-decoration title-forum my-auto">Announcements</a>
-                        <span class="closed-forum">Closed</span>
+                <div class="col-md-6 col-10 row px-0 mx-auto border-list-forum">
+                    <a href="comment-post.html" class="my-auto remove-xl-div col-xl-2 pl-4 post-img"><img src="img/discussion-page/avatar3.jpg" alt="F-Code" class="img-forum mx-auto remove-xl-div"></a>
+                    <div class="col-xl-10 col-12 mx-auto my-auto text-left px-4 text-forum">
+                        <a href="comment-post.html" class="no-decoration title-forum my-auto">Technology</a>
+                        <!--                        <span class="closed-forum">Closed</span>-->
                         <br>
-                        <p style="opacity: 0.9" class="my-auto"><em>This forum is a special forum for general announcements.</em></p>
+                        <p style="opacity: 0.9" class="my-auto res-text-title-forum"><em>Latest technology news and updates from our community.</em></p>
                     </div>
                 </div>
-                <div class="col-6 row text-center px-0 mx-auto">
-                    <span style="font-size: 1.2rem" class="col-3 py-5 my-auto border-list-forum">4</span>
-                    <span style="font-size: 1.2rem" class="col-3 py-5 my-auto border-list-forum res-comments">4</span>
-                    <div class="col-6 row text-right px-0 mx-auto border-list-forum res-time">
-                        <div class="mx-auto my-auto" style="line-height: 1.4">
-                            <a href="#" class="no-decoration brand-name-forum">Sơn Tùng M-TP</a>
-                            <br>
-                            <a href="#" class="no-decoration post-time-forum"><span class="fa fa-clock" style="font-size: 0.8rem"></span> 1 month, 1 weeks ago</a>
+                <div class="mx-auto col-2 col-md-6 row text-center px-0 mx-auto">
+                    <div class="col-md-3 col-12 border-list-forum my-auto py-5">
+                        <span class="mx-auto res-comment">5</span>
+                    </div>
+                    <div class="col-md-3 remove-md-div border-list-forum my-auto">
+                        <span class="mx-auto res-comments remove-md-div py-5">2</span>
+                    </div>
+
+                    <div class="col-md-6 remove-md-div border-list-forum row mx-auto text-right">
+                        <div class=" my-auto col-xl-9 remove-md-div" style="line-height: 1.4">
+                            <span class="remove-md-div brand-name-forum my-auto">Dê Rô Nai</span>
+                            <span class="remove-md-div post-time-forum my-auto"><span class="fa fa-clock" style="font-size: 0.8rem"></span> 1 month, 2 weeks ago</span>
                         </div>
-                        <a href="#" class="mx-auto my-auto res-link-avatar-forum"><img src="img/discussion-page/1.png" alt="F-Code" class="rounded-circle res-avatar-forum"></a>
+                        <a href="#profile" class="remove-xl-div col-xl-3 my-auto"><img src="img/discussion-page/2.jpg" alt="F-Code" class="remove-xl-div my-auto rounded-circle res-avatar-forum"></a>
                     </div>
                 </div>
             </div>
 
 
 
-             <!--row-->
+            <!--    Row-->
             <div class="col-12 px-0 row mx-auto">
-                <div class="col-6 row text-center px-0 mx-auto border-list-forum">
-                    <a href="#" class="my-auto pl-3 post-img"><img src="img/discussion-page/avatar1.jpg" alt="F-Code" class="img-forum"></a>
-                    <div class="col-10 px-4 my-auto text-left" style="line-height: 1.75; opacity: 0.85">
-                        <a href="#" class="no-decoration title-forum my-auto">Announcements</a>
+                <div class="col-md-6 col-10 row px-0 mx-auto border-list-forum">
+                    <a href="comment-post.html" class="my-auto remove-xl-div col-xl-2 pl-4 post-img"><img src="img/discussion-page/avatar4.jpg" alt="F-Code" class="img-forum mx-auto remove-xl-div"></a>
+                    <div class="col-xl-10 col-12 mx-auto my-auto text-left px-4 text-forum">
+                        <a href="comment-post.html" class="no-decoration title-forum my-auto">Travel</a>
                         <span class="closed-forum">Closed</span>
                         <br>
-                        <p style="opacity: 0.9" class="my-auto"><em>This forum is a special forum for general announcements.</em></p>
+                        <p style="opacity: 0.9" class="my-auto res-text-title-forum"><em>Travel advice, information and inspiration from our community.</em></p>
                     </div>
                 </div>
-                <div class="col-6 row text-center px-0 mx-auto">
-                    <span style="font-size: 1.2rem" class="col-3 py-5 my-auto border-list-forum">4</span>
-                    <span style="font-size: 1.2rem" class="col-3 py-5 my-auto border-list-forum res-comments">4</span>
-                    <div class="col-6 row text-right px-0 mx-auto border-list-forum res-time">
-                        <div class="mx-auto my-auto" style="line-height: 1.4">
-                            <a href="#" class="no-decoration brand-name-forum">Sơn Tùng M-TP</a>
-                            <br>
-                            <a href="#" class="no-decoration post-time-forum"><span class="fa fa-clock" style="font-size: 0.8rem"></span> 1 month, 1 weeks ago</a>
+                <div class="mx-auto col-2 col-md-6 row text-center px-0 mx-auto">
+                    <div class="col-md-3 col-12 border-list-forum my-auto py-5">
+                        <span class="mx-auto res-comment">10</span>
+                    </div>
+                    <div class="col-md-3 remove-md-div border-list-forum my-auto">
+                        <span class="mx-auto res-comments remove-md-div py-5">7</span>
+                    </div>
+
+                    <div class="col-md-6 remove-md-div border-list-forum row mx-auto text-right">
+                        <div class=" my-auto col-xl-9 remove-md-div" style="line-height: 1.4">
+                            <span class="remove-md-div brand-name-forum my-auto">Chạy Ngay Đi</span>
+                            <span class="remove-md-div post-time-forum my-auto"><span class="fa fa-clock" style="font-size: 0.8rem"></span> 1 month, 4 weeks ago</span>
                         </div>
-                        <a href="#" class="mx-auto my-auto res-link-avatar-forum"><img src="img/discussion-page/1.png" alt="F-Code" class="rounded-circle res-avatar-forum"></a>
+                        <a href="#profile" class="remove-xl-div col-xl-3 my-auto"><img src="img/discussion-page/1.png" alt="F-Code" class="remove-xl-div my-auto rounded-circle res-avatar-forum"></a>
                     </div>
                 </div>
             </div>
 
 
 
-             <!--row-->
-            <div class="col-12 px-0 row mx-auto">
-                <div class="col-6 row text-center px-0 mx-auto border-list-forum">
-                    <a href="#" class="my-auto pl-3 post-img"><img src="img/discussion-page/avatar1.jpg" alt="F-Code" class="img-forum"></a>
-                    <div class="col-10 px-4 my-auto text-left" style="line-height: 1.75; opacity: 0.85">
-                        <a href="#" class="no-decoration title-forum my-auto">Announcements</a>
-                        <span class="closed-forum">Closed</span>
-                        <br>
-                        <p style="opacity: 0.9" class="my-auto"><em>This forum is a special forum for general announcements.</em></p>
-                    </div>
-                </div>
-                <div class="col-6 row text-center px-0 mx-auto">
-                    <span style="font-size: 1.2rem" class="col-3 py-5 my-auto border-list-forum">4</span>
-                    <span style="font-size: 1.2rem" class="col-3 py-5 my-auto border-list-forum res-comments">4</span>
-                    <div class="col-6 row text-right px-0 mx-auto border-list-forum res-time">
-                        <div class="mx-auto my-auto" style="line-height: 1.4">
-                            <a href="#" class="no-decoration brand-name-forum">Sơn Tùng M-TP</a>
-                            <br>
-                            <a href="#" class="no-decoration post-time-forum"><span class="fa fa-clock" style="font-size: 0.8rem"></span> 1 month, 1 weeks ago</a>
-                        </div>
-                        <a href="#" class="mx-auto my-auto res-link-avatar-forum"><img src="img/discussion-page/1.png" alt="F-Code" class="rounded-circle res-avatar-forum"></a>
-                    </div>
-                </div>
-            </div>
 
 
 
-            
+
         </div>
     </div>
     <!--        end of discussion-->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light bottom">
+    <nav class="navbar navbar-expand-lg navbar-white bg-white bottom" style="box-shadow: 0 -5px 5px -5px lightgray">
         <div class="container footer-p">
             <!--                <div class="row">-->
             <div class="d-flex justify-content-start">

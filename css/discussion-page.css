@@ -97,71 +97,93 @@ body {
     color: black;
 }
 
-.post-img {}
+.text-forum {
+    line-height: 1.75;
+    opacity: 0.85;
+}
+
+.res-comment {
+    font-size: 1.2rem;
+}
+
+.res-comments {
+    font-size: 1.2rem;
+}    
+
 
 /*//////Responsive/////*/
 
-.post-img {
-        display: block;
-    }
-
-.img-forum {
-        display: block;
-    }
-
-.res-avatar-forum {
-        display: block;
-    }
-
-.res-link-avatar-forum {
-        display: block;
-    }
+.remove-md-div {
+    display: block;
+}
+.remove-div {
+    display: block;
+}
+.remove-xl-div {
+    display: block;
+}
 
 
-@media (max-width: 1300px) {
-    .post-img {
-        width: 0px;
-        height: 0px;
-        padding: 0;
-        opacity: 0;
-        display: none;
-    }
-    .img-forum {
-        width: 0px;
-        height: 0px;
-        padding: 0;
-        opacity: 0;
-        display: none;
-    }
-    .res-avatar-forum {
-        height: 0px;
-        width: 0px;
-        opacity: 0;
-        padding: 0;
-        display: none;
-    }
-    .res-link-avatar-forum {
-        height: 0px;
-        width: 0px;
-        padding: 0;
-        opacity: 0;
-        display: none;
-    }
-/*
-    .res-comments {
-        height: 0px;
-        width: 0px;
-        padding: 0;
-        opacity: 0;
-        display: none;
-    }
-    .res-time {
-        height: 0px;
-        width: 0px;
-        padding: 0;
-        opacity: 0;
-        display: none;
-    }
-*/
+@media (max-width: 1199px) {
+   .remove-md-div {
+    display: block;
+}
+    .remove-div {
+    display: block;
+}
+    .remove-xl-div {
+    display: none !important;
+}
 
+}
+
+
+@media (max-width: 767px) {
+   .remove-md-div {
+    display: none !important;
+}
+    .remove-div {
+    display: block;
+}
+    .remove-xl-div {
+    display: none !important;
+}
+
+}
+
+
+@media (max-width: 575px) {
+   .remove-md-div {
+    display: none !important;
+}
+    .remove-div {
+    display: none !important;
+}
+    .remove-xl-div {
+    display: none !important;
+}
+
+}
+
+
+@media (max-width: 375px) {
+    .title-forum {
+        font-size: 1.0rem;
+    }
+    .res-text-title-forum{
+        font-size: 0.9rem;
+    }
+    .res-comment {
+        font-size: 0.9rem;
+    }
+    .closed-forum {
+        font-size: 0.6rem;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .closed-forum {
+        display: none !important;
+    }
 }
