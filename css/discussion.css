@@ -162,7 +162,7 @@ input:focus {
     margin-left: 40px;
 }
 .comment-wrappper .date {
-    float: right;
+    /*float: right;*/
     text-transform: uppercase;
     font-size: 0.8em;
     line-height: 20px;
@@ -193,28 +193,23 @@ ol.layer2 {
     text-transform: uppercase;
 }
 /*---Media Queries --*/
-@media (max-width: 992px) {
- 
-  }
 
-@media (max-width: 768px) {
-  #body-content {
-    margin-top: 20px;
-    background: #fefefe;
-}
-   .comment-wrapper .date {
-    display: block;
-    float: none;
-    text-transform: uppercase;
-    font-size: 0.8em;
-    line-height: 20px;
-    margin-left: 40px;
-}
-    
-}
-/*xs*/
-@media (max-width: 576px) {
-   .title {
+@media (min-width: 320px)  and (max-width: 570px){
+    .comment-wrapper{
+        padding-left: 25px;
+    }
+    .comment-wrapper .date {
+        display: block;
+        float: none;
+        text-transform: uppercase;
+        font-size: 0.8em;
+        line-height: 20px;
+        margin-left: 40px;
+    }
+    .comment-info{
+        display: block;
+    }
+       .title {
     text-transform: uppercase;
     position: absolute;
     top: 50%;
@@ -224,12 +219,49 @@ ol.layer2 {
     color: #333;
 }
  .comment-content {
-    margin-left: 25px;
-    padding-top: 10px;
+    margin-left: 10px;
+    padding-top: 18px;
     color: #333;
      font-size: 0.7em;
 }
+    #body-wrapper #body-content #row1 .comment-wrapper p {
+        padding-left: 0;
+        letter-spacing: 0.12px;
+    }
+    .article-content{
+        line-height: 1.6;
+letter-spacing: 0.5px;
+    }
 }
+
+
+
+@media (min-width: 571px) {
+  #body-content {
+    margin-top: 20px;
+    background: #fefefe;
+}
+   .comment-wrapper .date {
+    /*display: block;*/
+    float: right;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    line-height: 20px;
+    margin-left: 40px;
+}
+    
+}
+/*xs*/
+@media (max-width: 576px) {
+
+}
+
+
+
+
+
+
+
 
 /*--- Bootstrap Padding Fix --*/
 /*[class*="col-"] {
