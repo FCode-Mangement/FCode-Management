@@ -14,31 +14,21 @@ p, h4 {
 
 .body-wrapper {
   background-color: #ddd;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  padding-right: 0;
+  padding-left: 0; }
   .body-wrapper .body-outner {
     width: 90%;
-    background-color: #fefefe; }
-    @media (min-width: 960px) {
+    background-color: #fefefe;
+    z-index: 2;
+    padding: 0; }
+    @media (max-width: 767px) {
       .body-wrapper .body-outner {
-        position: relative;
-        z-index: 2;
-        margin-top: -50px; } }
-    @media (max-width: 576px) {
-      .body-wrapper .body-outner {
-        width: 100%;
-        background-color: #fefefe;
-        position: relative;
-        z-index: 2;
-        margin-top: 0px; } }
+        background-color: transparent; } }
     .body-wrapper .body-outner #body-inner #top-panel {
       margin: 0; }
       .body-wrapper .body-outner #body-inner #top-panel .item-cell {
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-        padding: 10px 20px; }
-        @media (min-width: 760px) {
-          .body-wrapper .body-outner #body-inner #top-panel .item-cell {
-            box-sizing: content-box;
-            padding: 30px 40px; } }
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
         .body-wrapper .body-outner #body-inner #top-panel .item-cell .thumb-icon {
           position: relative;
           min-width: 70px;
@@ -85,21 +75,21 @@ p, h4 {
       min-width: 120px;
       position: relative;
       overflow: hidden;
-      background-color: #139BCD; }
+      background-color: #c4e5ef; }
       .body-wrapper .body-outner #body-inner #middle-panel footer .control-btn .view-all-btn {
         cursor: pointer;
         border-right: 1px #ddd solid;
         color: #333; }
         .body-wrapper .body-outner #body-inner #middle-panel footer .control-btn .view-all-btn:hover {
-          background-color: #147DA4;
-          color: #fefefe; }
+          background-color: #364253;
+          color: #ddd; }
       .body-wrapper .body-outner #body-inner #middle-panel footer .control-btn i {
         color: #333;
         cursor: pointer;
         transition: all 300ms ease; }
         .body-wrapper .body-outner #body-inner #middle-panel footer .control-btn i:hover {
           color: #fefefe;
-          background-color: #147DA4; }
+          background-color: #2a3441; }
     .body-wrapper .body-outner #body-inner #middle-panel #middle-wrapper {
       padding: 20px 0 20px 0;
       margin: 0; }
@@ -107,6 +97,8 @@ p, h4 {
         margin-bottom: 5px; }
         .body-wrapper .body-outner #body-inner #middle-panel #middle-wrapper .slick-slide .slide-wrapper {
           cursor: pointer;
+          padding-right: 0;
+          padding-left: 0;
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
           .body-wrapper .body-outner #body-inner #middle-panel #middle-wrapper .slick-slide .slide-wrapper:hover {
             box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
@@ -163,14 +155,36 @@ p, h4 {
       .body-wrapper .body-outner #body-inner #bottom-panel #bottom-wrapper .card-news-post .card-inner:hover {
         box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
 
-@media (max-width: 576px) {
-  #body-inner {
-    padding: 10px 10px; } }
+@media (max-width: 767px) {
+  #top-panel > div, #middle-panel .slide-wrapper, #bottom-panel .card-news-post .card-inner {
+    background-color: #fefefe; } }
 
-@media (max-width: 768px) {
+@media (min-width: 320px) {
   #body-inner {
-    padding: 20px 30px; } }
+    padding-top: 20px; }
+    #body-inner #top-panel .item-cell {
+      padding: 1rem;
+      margin-bottom: 20px; } }
 
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   #body-inner {
-    padding: 60px 50px 60px 50px; } }
+    padding-top: 20px; }
+    #body-inner #top-panel .item-cell {
+      padding: 2rem;
+      margin-bottom: 20px; } }
+
+@media (min-width: 991px) {
+  #body-inner {
+    padding: 20px; }
+    #body-inner #top-panel .item-cell {
+      padding: 2rem;
+      margin-bottom: 20px;
+      min-width: 280px; } }
+
+@media (min-width: 1400px) {
+  .body-outner {
+    min-width: 1300px; }
+    .body-outner #top-panel .item-cell {
+      padding: 2rem;
+      margin-bottom: 20px;
+      min-width: 350px; } }

@@ -1,0 +1,146 @@
+// MIXIN CODE
+mixin card(val)
+  //item-card
+  - var src = "img/images-for-forum/post-news-img" + val + ".jpg"
+  .col-xl-4.col-md-6.col-xs-12.card-news-post.wow.bounceInDown
+    .card-inner
+      footer
+        .img-header
+          img.img-fluid(src=src alt="Forum Image")
+      .body-card-wrapper.my-4
+        .article-section.text-left.px-3
+          a.date.text-uppercase March 8,2018
+          h4.forum-catogy(style="max-width: 100%") What will a Marks wil be like
+        p.category-content.px-3.text-left Nostrud quis ne excepteur praetermissum, probant non probant, nulla cernantur nostrud ab expetendis irure senserit, id magna aute velit iudicem ex quem quibusdam…  
+      .news-info.d-flex.justify-content-between.p-3
+          div
+            a.author-infor.my-auto
+              img.border.rounded-circle(src="img/images-for-forum/user-avtar-resize.png" alt="User Ava" style="width: 20px")
+            span.author-name.my-auto FCode
+          div.text-right
+            span.cmt-number
+              i.fa.fa-comments  0
+
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Welcome to Our Forums
+    link(rel="stylesheet" href="css/home-navigation.css")
+    link(rel="stylesheet" href="css/header.css")
+    
+    link(rel="stylesheet" href="css/footer.css")
+    
+
+    link(rel="stylesheet" type="text/css" href="slick-master/slick/slick.css")
+    // Latest compiled and minified CSS
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css")
+    link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous")
+    
+    link(rel="stylesheet" href="css/news.css")
+    link(rel="stylesheet" href="css/register_form.css")
+    link(href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Andika" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Sriracha" rel="stylesheet")
+    // jQuery library
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+    // Popper JS
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js")
+    // Latest compiled JavaScript
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js")
+    
+    script(src="js/login.js")
+    script(src="js/news.js")
+    //add slick libary
+    script(src="slick-master/slick/slick.min.js")
+  body(style="background-color: #FBEAFF;")
+      // Navigation bar
+      nav#navigation-p.navbar.navbar-expand-lg.navbar-light.bg-light.sticky-top
+        button.navbar-toggler(data-toggle="collapse" data-target="#collapse_target")
+          span.navbar-toggler-icon.ml-auto
+        #collapse_target.collapse.navbar-collapse
+          ul.navbar-nav.justify-content-end.justify-content-center.w-100(style="font-size: 20px;")
+            li.nav-item.px-2
+              a.nav-link.text-center(href="index.html")
+                | Home
+            li.nav-item.px-2
+              a.nav-link.text-center(href="index.html")
+                | Introduction
+            li.nav-item.px-2
+              a.nav-link.text-center(href="index.html")
+                | News
+            li.nav-item.px-2
+              a.nav-link.text-center(href="index.html")
+                | Discussion
+            li.nav-item.px-2
+              a.nav-link.text-center(href="index.html")
+                | Profile
+            li.nav-item.px-2
+              .input-group.py-1.w-100.text-center
+                input.form-control.form-control-dark(type="text" placeholder="Search here..." aria-label="Search")
+                .input-group-append
+                  button.btn.btn-outline-success(type="submit")
+                    i.fa.fa-search
+            li.nav-item.px-2
+              a.nav-link.text-center(style="cursor: pointer;" onclick="showLogin()")
+                | Log in 
+                i.fas.fa-sign-in-alt
+      // End of navigation bar
+      // Carousel slide data
+      .row.col-10.d-flex.justify-content-center.mx-auto
+        #loginPanel.row.col-10.mx-auto(style="background: white; position: fixed; height: auto; z-index: 10; display: none")
+          h1.display-4(align="center") Login
+          hr
+          #login
+            table(width="100%")
+              tr
+                td
+                  font(style="color: #6B717E; font-size: 20px") Username or E-mail
+                td
+                  input(type="text" size="30" style="height: 35px")
+            table(width="163%")
+              tr
+                td
+                  font(style="color: #6B717E; font-size: 20px") Password
+                td
+                  input(type="password" size="30" style="height: 35px")
+            table
+              tr
+                td
+                  font(style="color: #6B717E; font-size: 20px") Connect with us:
+              tr
+                td
+                  a(href="https://www.facebook.com/fcodefpt/?fref=nf")
+                    img(src="images/images_facebook.png" alt="" width="60px" height="60px")
+          table(width="100%")
+            tr
+              td
+                input(type="checkbox" name="" value="")
+                font(style="color: #6B717E; font-size: 20px") Remember Me
+              td(width="50px")
+                input.btn.btn-primary(type="submit" value="Login" style="width: 70px, height=50px")
+          hr
+          br
+          a(href="register.html") Register
+      //search-section
+      div.container-fluid.pb-2.search-section
+        .container.search-inner.my-auto.py-auto.front-parallax.wow.bounceInUp
+          h4.text-uppercase.pb-3 Search
+          .input-group.mx-auto
+            input(placeholder="Enter a keyword..." type="text").form-control
+            .input-group-append
+              button.btn.btn-blue
+                i.fa.fa-search.p-3(style="color: #fefefe")
+        .bg-layer2.back-parallax
+        .bg-color-layer1
+      //body
+      .body-wrapper
+        .body-outner.mx-auto
+          .row#body-inner
+            -for(var i=0;i<6;i++)
+              +card(i)
+

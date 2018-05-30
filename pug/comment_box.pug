@@ -1,0 +1,42 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Welcome to Our Forums
+        link(rel="stylesheet" href="css/home-navigation.css")
+        link(rel="stylesheet" href="css/header.css")
+        link(rel="stylesheet" href="css/join-our-forum.css")
+        link(rel="stylesheet" href="css/footer.css")
+        link(rel="stylesheet" type="text/css" href="slick-master/slick/slick.css")
+        // Latest compiled and minified CSS
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css")
+        link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous")
+        link(rel="stylesheet" href="css/forum.css")
+        link(href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Andika" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Sriracha" rel="stylesheet")
+        // jQuery library
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+        // Popper JS
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js")
+        // Latest compiled JavaScript
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js")
+
+        //add slick libary
+        link(href="css/comment_box.css" rel="stylesheet")
+        script(src="slick-master/slick/slick.min.js")
+        //add emoji
+        link(rel="stylesheet" href="emoji_plugin/dist/emojionearea.css")
+        script(src="emoji_plugin/dist/emojionearea.min.js")
+        
+        sciptt(src="js/emoji.js" type="text/javascript") 
+    body
+        .container-fluid.justify-content-center
+            .d-flex.mx-auto.container.text-center
+                #left.rounded-circle
+                    img.rounded-circle(src="img/user-image.jpeg")
+                #right
+                    textarea#emoji-area(placeholder="Type here")
+        
