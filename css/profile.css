@@ -1,121 +1,159 @@
 .wrap-profile-profile {
-    margin-top: -7%;
-    background-color: white;
-    position: relative;
-    z-index: 5;
-    margin-bottom: 2%;
-    padding-bottom: 2%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+  margin-top: -7%;
+  background-color: white;
+  position: relative;
+  z-index: 5;
+  margin-bottom: 2%;
+  padding-bottom: 2%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 #header-img {
-    width: 100%;
-}
+  width: 100%; }
 
 .wrap-avartar-profile-P {
-    padding: 8%;
-    border: 1px solid #DDDDDD;
-    margin-top: 15%;
-    background-color: white;
-}
+  padding: 8%;
+  border: 1px solid #DDDDDD;
+  margin-top: 15%;
+  background-color: white; }
 
 .avartar-profile-P {
-    width: 100%;
-}
+  width: 100%; }
 
 .wrap-cate-profile-P {
-    padding: 0;
-}
+  padding: 0; }
+
 .cate-profile-P {
-    list-style-type: none;
-    padding: 5% 0 5% 10%;
-    font-size: 20px;
-    border: 1px solid #DDDDDD;
-}
-
-.cate-profile-P > a {
+  list-style-type: none;
+  padding: 5% 0 5% 10%;
+  font-size: 20px;
+  border: 1px solid #DDDDDD; }
+  .cate-profile-P > a {
     color: black;
-    transition: 0.5s;
-}
-
-.cate-profile-P > a:hover {
-    text-decoration: none;
-    color: #1D84B5;
-}
+    transition: 0.5s; }
+    .cate-profile-P > a:hover {
+      text-decoration: none;
+      color: #1D84B5; }
 
 .profile-box-P {
-    text-align: center;
-    padding: 5% 0 5% 0;
-    border: 1px solid #DDDDDD;
-    margin-top: 4.5%;
-    background-color: white;
-}
+  text-align: center;
+  padding: 5% 0 5% 0;
+  border: 1px solid #DDDDDD;
+  margin-top: 4.5%;
+  background-color: white; }
 
 .profile-box-icon-P {
-    font-size: 30px;
-    background-color: #F1F1F1;
-    border-radius: 100%;
-    padding: 10%;
-    margin-bottom: 5%;
-}
+  font-size: 30px;
+  background-color: #F1F1F1;
+  border-radius: 100%;
+  padding: 10%;
+  margin-bottom: 5%; }
 
 .profile-profile-content-P {
-    border: 1px solid #DDDDDD;
-    padding: 1% 0 0 0;
-}
+  border: 1px solid #DDDDDD;
+  padding: 1% 0 0 0; }
 
 .profile-profile-detail-P {
-    display: inline
-}
+  display: inline; }
 
 .profile-edit-icon-P {
-    display: inline;
-    float: right;
-    cursor: pointer;
-}
+  display: inline;
+  float: right;
+  cursor: pointer; }
 
 @media (max-width: 990px) {
-    .profile-box-P > h5 {
-        font-size: 15px;
-    }
-    
-    .profile-box-P > p {
-        font-size: 10px;
-    }
-    
-    .cate-profile-P {
-        font-size: 15px;
-    }
-    
-    .profile-profile-content-P > h4 {
-        font-size: 15px;
-        margin-bottom: 0px;
-    }
-    
-    .profile-profile-content-P > p {
-        font-size: 10px;
-    }
-    
-    .profile-box-icon-P {
-        font-size: 20px;
-    }
-}
+  .profile-box-P > h5 {
+    font-size: 15px; }
+  .profile-box-P > p {
+    font-size: 10px; }
+  .cate-profile-P {
+    font-size: 15px; }
+  .profile-profile-content-P > h4 {
+    font-size: 15px;
+    margin-bottom: 0px; }
+  .profile-profile-content-P > p {
+    font-size: 10px; }
+  .profile-box-icon-P {
+    font-size: 20px; } }
 
 @media (max-width: 768px) {
-    .wrap-cate-profile-P {
-        display: flex;
-    }
-    
-    .cate-profile-P {
-        text-align: center;
-        font-size: 15x;
-        padding-left: 0px;
-        flex: 1;
-        width: 25%;
-        position: relative;
-        top: 50%;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-    }
-}
+  .wrap-cate-profile-P {
+    display: flex; }
+  .cate-profile-P {
+    text-align: center;
+    font-size: 15x;
+    padding-left: 0px;
+    flex: 1;
+    width: 25%;
+    position: relative;
+    top: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex; } }
+
+.container-fluid {
+  padding: 0; }
+  .container-fluid .profile-profile-content-P {
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: visible;
+    position: relative;
+    border: 1px #888 solid; }
+    .container-fluid .profile-profile-content-P .tag-wrapper {
+      padding: .25rem;
+      background-color: #ddd;
+      border-bottom: #ddd 1px solid; }
+      .container-fluid .profile-profile-content-P .tag-wrapper h4 {
+        margin-bottom: 0; }
+      .container-fluid .profile-profile-content-P .tag-wrapper i {
+        margin-top: 3px; }
+    .container-fluid .profile-profile-content-P .content-wrapper {
+      position: relative;
+      height: 75px; }
+      .container-fluid .profile-profile-content-P .content-wrapper .content-inner {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all .3s ease-in-out; }
+        .container-fluid .profile-profile-content-P .content-wrapper .content-inner .profile-wrapper {
+          transition: all .3s ease-in-out;
+          min-width: 100%;
+          height: 100%;
+          position: relative;
+          z-index: 9; }
+          .container-fluid .profile-profile-content-P .content-wrapper .content-inner .profile-wrapper i {
+            cursor: pointer; }
+        .container-fluid .profile-profile-content-P .content-wrapper .content-inner .edit-field {
+          position: relative;
+          display: block;
+          min-width: 100%;
+          height: 100%;
+          transition: all .3s ease-in-out; }
+          .container-fluid .profile-profile-content-P .content-wrapper .content-inner .edit-field form {
+            height: 100%;
+            position: relative; }
+            .container-fluid .profile-profile-content-P .content-wrapper .content-inner .edit-field form .input {
+              min-width: 100%; }
+            .container-fluid .profile-profile-content-P .content-wrapper .content-inner .edit-field form label {
+              margin-bottom: 0;
+              position: relative; }
+              .container-fluid .profile-profile-content-P .content-wrapper .content-inner .edit-field form label .input__label-content {
+                padding-top: 0; }
+              .container-fluid .profile-profile-content-P .content-wrapper .content-inner .edit-field form label .submit-btn {
+                position: absolute;
+                right: 0;
+                top: 0; }
+                .container-fluid .profile-profile-content-P .content-wrapper .content-inner .edit-field form label .submit-btn button {
+                  border-radius: 0 0 1.45rem 1.45rem;
+                  background-color: #009979;
+                  padding: 0 .25rem; }
+                  .container-fluid .profile-profile-content-P .content-wrapper .content-inner .edit-field form label .submit-btn button i {
+                    color: #fefefe; }
+            .container-fluid .profile-profile-content-P .content-wrapper .content-inner .edit-field form .input {
+              position: absolute;
+              top: 0;
+              left: 0;
+              margin: 0;
+              height: 100%;
+              width: 100%; }
