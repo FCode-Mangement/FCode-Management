@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/comment-post.css">
     <link rel="stylesheet" href="js/login.js">
-    <link rel="stylesheet" href="css/register_form.css">
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
@@ -31,9 +30,12 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <script src="js/login.js"></script>
+<<<<<<< HEAD
     <script src="js/register.js"></script> 
      <link rel="stylesheet" type="text/css" href="css/login_form_1.css"> 
     <script src="js/login-form.js"></script> 
+=======
+>>>>>>> ddca5cf95ed842e6da59e50a079487e81dcc0f3a
 </head>
 
 <body style="background-color: #FBEAFF;">
@@ -95,46 +97,59 @@
     <!--        End of navigation bar-->
 
     <!--        Carousel slide data--->
-    <form id="loginPanel">
-                <div class="ava">
-                    <div id="avaimage"></div>
-                </div>
-                <div class="loginform-group">
-                    <div class="input_field">
-                        <div class="imageicon" style="background-image: url(img/user.png);"></div>
-                        <div class="register_text">
-                            <input type="text" class="form-control input-lg" id="loginUsername" placeholder="Username">
-                        </div>
-                    </div> 
-                    <div class="hidden">
-                        <span id="alertlogin1" class="hidden_alert2">Invalid Username</span>
-                    </div> 
-                </div>
-                <div class="loginform-group">
-                    <div class="input_field">
-                        <div class="imageicon" style="background-image: url(img/key.png);"></div>
-                        <div class="register_text">
-                             <input type="password" class="form-control input-lg" id="loginPassword" placeholder="Password">
-                        </div>
-                    </div> 
-                    <div class="hidden">
-                        <span id="alertlogin2" class="hidden_alert2">Invalid Password</span>
-                    </div> 
-                    <div style="margin-top: -1%">
-                        <div id="checkRemember"><input type="checkbox" id="btnremember" class="form-control input-lg"> </div>
-                        <div id="rememberme"><p> Remember me</p></div>
-                    </div>
-                    
-                </div>
-                <div class="loginform-group">
-                    <input type="button" value="Login" onclick="checkUserLogin()" id="Loginbutton" />
-                    <div>
-                        <div id="linkregi"><a href="register.html">Register</a> </div>
-                        <div id="linkeditpass"><a href="register.html">Forgot password?</a></div>
-                    </div>
-                    
-                </div>
-        </form> 
+    <div class="row col-lg-12 d-flex justify-content-center">
+        <div class="row col-lg-6 " id="loginPanel" style="background: white; position: fixed; height: auto; z-index: 10; display: none">
+            <h1 class="display-4" align="center">Login</h1>
+            <hr>
+            <div id="login">
+                <table width="100%">
+                    <tr>
+                        <td>
+                            <font style="color: #6B717E; font-size: 20px">Username or E-mail</font>
+                        </td>
+                        <td>
+                            <input type="text" size="30" style="height: 35px">
+                        </td>
+                    </tr>
+                </table>
+                <table width="163%">
+                    <tr>
+                        <td>
+                            <font style="color: #6B717E; font-size: 20px">Password</font>
+                        </td>
+                        <td>
+                            <input type="password" size="30" style="height: 35px">
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <font style="color: #6B717E; font-size: 20px">Connect with us:</font>
+                        </td>
+                    </tr>
+                    <td>
+                        <a href="https://www.facebook.com/fcodefpt/?fref=nf"><img src="img/img_facebook.png" alt="" width="60px" height="60px"></a>
+                    </td>
+                </table>
+            </div>
+
+            <table width="100%">
+                <tr>
+                    <td>
+                        <input type="checkbox" name="" value="">
+                        <font style="color: #6B717E; font-size: 20px">Remember Me</font>
+                    </td>
+                    <td width="50px">
+                        <input class="btn btn-primary" type="submit" value="Login" style="width: 70px" ; height="50px">
+                    </td>
+                </tr>
+            </table>
+            <hr>
+            <br>
+            <a href="register.html">Register</a>
+        </div>
+    </div>
 
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" interval="5000">
         <div class="carousel-inner" role="listbox">
@@ -197,10 +212,10 @@
             <!--            <div class="col-md-7 text-center my-5 mx-4 home-gallery-p px-0">-->
             <!--            left column-->
             <div class="left-column col-md-8 text-left my-5 mx-auto px-0 justify-content-center">
-                <p class="pt-4 pb-4 pr-5 pl-5 main-box-gray" style="border-left: 2px solid lightcoral">
-                    <a class="fa fa-home post-title-link"></a> >
-                    <a href="#" class="post-title-link">Forums</a> ›
-                    <a href="#" class="post-title-link">Food & Drink</a>
+                <p class="pt-4 pb-4 pr-5 pl-5 main-box-gray" style="border-left: 2px solid deepskyblue">
+                    <a class="fa fa-home no-decoration"></a> >
+                    <a href="discussion-page.html" class="no-decoration">Forums</a> ›
+                    <a href="#discussion-page-cont" class="no-decoration">Food & Drink</a>
                     <span style="opacity: 0.8">› Italian Cuisine</span>
                 </p>
                 <p class="pt-4 pb-4 pr-5 pl-5 main-box-gray" style="border-left: 2px solid deepskyblue">This topic contains 4 replies, has 2 voices, and was last updated by
@@ -226,7 +241,8 @@
                         <div class="col-md-8" style="margin-left: 0">
                             <span class="mr-3">March 9, 2018 at 5:15 pm<a href="#" style="float: right" class="no-decoration mr-3">#188</a></span>
                             <hr>
-                            <p class="col-md-12">Hellow World!! Your Text Here... Hellow World!! Your Text Here... Hellow World!! Your Text Here... Hellow World!! Your Text Here... Hellow World!! Your Text Here... <br><br>Italian cuisine is food typical from Italy. It has developed through centuries of social and economic changes, with roots stretching to antiquity.<br> Significant changes occurred with the discovery of the New World and the introduction of potatoes, tomatoes, bell peppers, maize and sugar beet, this last introduced in quantity in the 18th century. Italian cuisine is known for its regional diversity, especially between the north and the south of the Italian peninsula. It offers an abundance of taste, and is one of the most popular and copied in the world. It influenced several cuisines around the world chiefly that of the United States.<br> Italian cuisine is generally characterized by its simplicity, with many dishes having only two to four main ingredients. Italian cooks rely chiefly on the quality of the ingredients rather than on elaborate preparation. Ingredients and dishes vary by region. Many dishes that were once regional, have proliferated with variations throughout the country.<br> Pasta, vegetables, olive oil and fish are a major part of the Italian cuisine. Italian cuisine is probably the most important expression of the Mediterranean diet.</p>
+                            <p style="max-width: 97%; font-size: 0.95rem">Hellow World!! Your Text Here... Hellow World!! Your Text Here... Hellow World!! Your Text Here... Hellow World!! Your Text Here... Hellow World!! Your Text Here... <br><br>
+                            Italian cuisine is food typical from Italy. It has developed through centuries of social and economic changes, with roots stretching to antiquity. Significant changes occurred with the discovery of the New World and the introduction of potatoes, tomatoes, bell peppers, maize and sugar beet, this last introduced in quantity in the 18th century. Italian cuisine is known for its regional diversity, especially between the north and the south of the Italian peninsula. It offers an abundance of taste, and is one of the most popular and copied in the world. It influenced several cuisines around the world chiefly that of the United States. Italian cuisine is generally characterized by its simplicity, with many dishes having only two to four main ingredients. Italian cooks rely chiefly on the quality of the ingredients rather than on elaborate preparation. Ingredients and dishes vary by region. Many dishes that were once regional, have proliferated with variations throughout the country. Pasta, vegetables, olive oil and fish are a major part of the Italian cuisine. Italian cuisine is probably the most important expression of the Mediterranean diet.</p>
                         </div>
                     </div>
                     <!--                    button-like-->
@@ -419,7 +435,7 @@
                         <div class="col-md-8" style="margin-left: 0">
                             <span class="ml-3">April 2, 2018 at 9:25 pm	<a href="#" style="float: right" class="no-decoration mr-3">#323</a></span>
                             <hr>
-                            <p class="col-md-12">Italian cuisine has developed over the centuries. Although the country known as Italy did not unite until the 19th century, the cuisine can claim traceable roots as far back as the 4th century BCE. Food and culture was very important at that time as we can see from the cookbook (Apicius) which dates back to first century BC.<br> Through the centuries, neighbouring regions, conquerors, high-profile chefs, political upheaval and the discovery of the New World have influenced its development. Italian food started to form after the fall of the Roman Empire, when different cities began to separate and form their own traditions. Many different types of bread and pasta were made, and there was a variation in cooking techniques and preparation. The country was split. Regional cuisine is represented by some of the major cities in Italy. For example, Milan (north of Italy) is known for its risottos, Bologna (the central/middle of the country) is known for its tortellini and Naples (the south) is famous for its pizzas and spaghettis.</p>
+                            <p style="max-width: 97%;font-size: 0.95rem">Italian cuisine has developed over the centuries. Although the country known as Italy did not unite until the 19th century, the cuisine can claim traceable roots as far back as the 4th century BCE. Food and culture was very important at that time as we can see from the cookbook (Apicius) which dates back to first century BC.<br><br> Through the centuries, neighbouring regions, conquerors, high-profile chefs, political upheaval and the discovery of the New World have influenced its development. Italian food started to form after the fall of the Roman Empire, when different cities began to separate and form their own traditions. Many different types of bread and pasta were made, and there was a variation in cooking techniques and preparation. The country was split. Regional cuisine is represented by some of the major cities in Italy. For example, Milan (north of Italy) is known for its risottos, Bologna (the central/middle of the country) is known for its tortellini and Naples (the south) is famous for its pizzas and spaghettis.</p>
                         </div>
                     </div>
                     <!--                    button-like-->
@@ -433,7 +449,7 @@
                 <!--                end comment-replies -->
                 <span style="font-size: 0.85rem">Viewing 2 replies - 1 through 2 (of 2 total)</span>
                 <p class="py-4 px-5  mt-5 main-box-gray" style="border-left: 2px solid deepskyblue">Tagged: <a href="#" class=" no-decoration">Food</a>, <a href="#" class=" no-decoration">Italian</a></p>
-                <p class="py-4 px-5  mt-3 main-box-gray" style="border-left: 2px solid deepskyblue">You must be logged in to reply to this topic.</p>
+                <p class="py-4 px-5  mt-3 main-box-gray" style="border-left: 2px solid #ff9800">You must be logged in to reply to this topic.</p>
             </div>
             <!--            end left column-->
 
@@ -635,7 +651,7 @@
                         <div class="mx-1 my-1" style="border: 1px solid lightgray; height: 100%">
                             <a href="#" class="no-decoration p-2 topic-tag-choice">Effect <span class="my-auto">-</span> 6</a>
                         </div>
-                        
+
                         <!--                    end contain-->
 
 

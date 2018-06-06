@@ -193,7 +193,7 @@ body {
         padding-left: 0px;
         max-width: 80%;
     }
-    .search-box::placeholder{
+    .search-box::placeholder {
         font-size: 0.75rem;
     }
     .search-button {
@@ -212,8 +212,11 @@ body {
         font-size: 0.7rem;
     }
     .topic-tag-choice {
-    font-size: 0.7rem;
-}
+        font-size: 0.7rem;
+    }
+    .clear-padding-res {
+        0px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -268,4 +271,3 @@ body {
         font-size: 0.9rem;
     }
 }
-
