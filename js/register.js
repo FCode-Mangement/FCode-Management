@@ -105,32 +105,32 @@ function exitNoti(){
 } 
 
 function checkUserLogin(){ 
-		var loginUsername=document.getElementById("loginUsername"); 
-		var loginPassword=document.getElementById("loginPassword"); 
+		var email=document.getElementById("email"); 
+		var password=document.getElementById("password"); 
 
 		var alertlogin1=document.getElementById("alertlogin1");
 		var alertlogin2=document.getElementById("alertlogin2");  
-		var mau1=/^([a-zA-Z0-9]{6,})$/;        
+		var mau1=/^([a-zA-Z0-9]+[@][a-zA-Z]+([.][a-zA-Z]+){1,2})$/;
 		var mau2=/^([a-zA-Z0-9\s]{6,})$/; 
 		var flag=true;
 
-		if(mau1.test(loginUsername.value)==false){  
+		if(mau1.test(email.value)==false){  
 			flag=false; 
-			loginUsername.style.borderColor = "red";       
+			email.style.borderColor = "red";       
 			alertlogin1.style.visibility="visible";
 		} 
  		else {
- 			loginUsername.style.borderColor = "lightblue";
+ 			email.style.borderColor = "#3A5E77";
  			alertlogin1.style.visibility="hidden"; 
  		}
  
-		if(mau2.test(loginPassword.value)==false){
+		if(mau2.test(password.value)==false){
 			flag=false; 
-			loginPassword.style.borderColor = "red";
+			password.style.borderColor = "red";
 			alertlogin2.style.visibility="visible";
 		} 
 		else{
-			loginPassword.style.borderColor = "lightblue";  
+			password.style.borderColor = "#3A5E77";  
 			alertlogin2.style.visibility="hidden"; 
 		} 
 		if(flag == true){
