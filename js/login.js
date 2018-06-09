@@ -19,8 +19,7 @@ var edit_btn = $(".edit-btn");
     this.addEventListener("click",function(){
       var edit_field = $(this).parent().next().find(".edit-field");
     var wrapper = $(this).parent().next();
-    console.log(edit_field);
-    console.log(wrapper);
+    
      if(edit_field.attr('data-display')=="true"){
       wrapper.animate({
         left: "-100%"

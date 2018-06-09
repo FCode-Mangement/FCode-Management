@@ -1,16 +1,16 @@
 //MIXIN
 mixin profile-content(title)
   - id = "profile-"+title+"-P"
-    .col-md-6.profile-profile-content-P.container
+    .col-md-6.profile-profile-content-P
       div.tag-wrapper.d-flex.justify-content-between
         h4.text-uppercase #{title}
         i.fas.fa-edit.profile-edit-icon-P.edit-btn.text-center
       .content-wrapper
-        .content-inner.d-flex
+        .content-inner.d-flex.content-display
           .container.profile-wrapper.p-2.d-flex.align-items-center.justify-content-between
             p.profile-profile-detail-P.d-inline-block.my-auto(id=id) John Doe
             // i.fas.fa-edit.profile-edit-icon-P.edit-btn
-          .edit-field.my-auto(data-display="true")
+          .edit-field.my-auto(data-display="true").content-display
             form
               span.input.input--minoru
                 input.input__field.input__field--yoko(type='text' id=title)
@@ -48,6 +48,8 @@ html(lang='en')
     link(href='https://fonts.googleapis.com/css?family=Merienda+One', rel='stylesheet')
     link(href='https://fonts.googleapis.com/css?family=Andika', rel='stylesheet')
     link(href='https://fonts.googleapis.com/css?family=Sriracha', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Lato:400,700i', rel='stylesheet')
+
     // jQuery library
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
     // Popper JS
@@ -103,7 +105,7 @@ html(lang='en')
     // End of navigation bar
     img#header-img(src='img/header-img.jpg')
     // Profile
-    .container.wrap-profile-profile(style='background-color: white;')
+    .container.wrap-profile-profile()
       .row
         .col-md-3
           .wrap-avartar-profile-P
@@ -121,16 +123,16 @@ html(lang='en')
 
 
         .col-md-9
-          .row.mx-auto
-            .col-4.profile-box-P
+          .row.mx-auto.pb-2
+            .col-4.profile-box-P(style='background-color: #fefefe')
               i.fas.fa-user.profile-box-icon-P
               h5 Forum Role
               p#forum-role-P User
-            .col-4.profile-box-P
+            .col-4.profile-box-P(style='background-color: #fefefe')
               i.fas.fa-comment.profile-box-icon-P
               h5 Topics Started
               p#topic-started-P 22
-            .col-4.profile-box-P
+            .col-4.profile-box-P(style='background-color: #fefefe')
               i.fas.fa-comments.profile-box-icon-P
               h5 Replies Created
               p#reply-created-P 38
